@@ -48,7 +48,7 @@
 }
 
 .header {
-  z-index: 1;
+  z-index: 1 !important;
   background-color: black;
   color: white;
   padding: 5vw;
@@ -168,6 +168,10 @@
   margin: 2.9vw 1vw;
 }
 
+#mood-left {
+
+}
+
 #mood-page {
   background: url(../images/Red.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -176,6 +180,10 @@
   background-size: cover;
   display: block;
   min-height: 100vw;
+}
+
+#mood-right {
+
 }
 
 #no-button {

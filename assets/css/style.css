@@ -38,6 +38,30 @@
   outline: 5px auto black;
 }
 
+.good {
+  font-family: "Julius Sans One", sans-serif;
+  position: absolute;
+  font-size: 7vw;
+  right: 60vw;
+  padding-bottom: 1.3vw;
+  margin: -5vw;
+}
+
+.header {
+  z-index: 1;
+  background-color: black;
+  color: white;
+  padding: 5vw;
+}
+
+.spirits {
+  font-family: "Vast Shadow", cursive;
+  font-size: 7.5vw;
+  margin: -5.7vw 0vw 0vw;
+  position: absolute;
+  left: 47vw;
+}
+
 .white-button {
 }
 
@@ -122,8 +146,12 @@
   padding-bottom: 1.4vw;
 }
 
+#kids-page {
+  display: none;
+}
+
 #landing-page {
-  display: block;
+  display: none;
 }
 
 #landing-text-left {
@@ -146,7 +174,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: none;
+  display: block;
   min-height: 100vw;
 }
 

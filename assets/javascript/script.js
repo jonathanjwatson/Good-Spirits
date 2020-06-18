@@ -14,3 +14,8 @@ function toLandingPage() {
   $("#landing-page").show();
   $("#age-verification-page").hide();
 }
+
+function toMoodPage() {
+  $("#mood-page").show();
+  $("#age-verification-page").hide();
+}

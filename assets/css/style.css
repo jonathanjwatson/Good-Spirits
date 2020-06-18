@@ -20,7 +20,6 @@
 }
 
 .black-button {
-
 }
 
 .forward-button {
@@ -40,7 +39,6 @@
 }
 
 .white-button {
-
 }
 
 .yes-no-button {
@@ -142,6 +140,16 @@
   margin: 2.9vw 1vw;
 }
 
+#mood-page {
+  background: url(../images/Red.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+  min-height: 100vw;
+}
+
 #no-button {
   color: #fff;
   text-decoration: none;
@@ -171,11 +179,9 @@
 }
 
 #start-button {
- 
 }
 
 #start-button:hover {
-
 }
 
 #tagline-div {

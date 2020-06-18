@@ -9,3 +9,15 @@ html {
   font-weight: 200;
   text-shadow: 1px 1px 0 #000;
 }
+
+.navbar {
+  background-color: black;
+  color: white;
+  margin: 0vw;
+}
+
+#header-text {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4vw;
+  padding: 1vw 3vw 3vw;
+}

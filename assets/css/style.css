@@ -1,5 +1,5 @@
-body {
-  background: url(../images/bg1.jpg) no-repeat center center fixed;
+/* body {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,7 +8,14 @@ body {
   font-family: "Source Code Pro", monospace;
   font-weight: 200;
   text-shadow: 1px 1px 0 #000;
-}
+} */
+
+/* html {
+  background-image: url("../images/Yellow.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-size: 50% 100%;
+  background-position: left top, right top; 
+} */
 
 .navbar {
   background-color: black;
@@ -17,10 +24,34 @@ body {
   border-radius: 0%;
 }
 
-#header-text {
+#header-text-left {
   font-family: "Julius Sans One", sans-serif;
-  font-size: 4vw;
-  padding: 1vw 3vw 3vw;
+  font-size: 7vw;
+  margin: 12vw 0vw;
+}
+
+#header-text-right {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 7vw;
+  margin: 12vw 0vw;
+}
+
+#page-left {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#page-right {
+  background: url(../images/Blue.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
 }
 
 #tagline-div {

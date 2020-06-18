@@ -2,6 +2,14 @@
   padding-bottom: 2vw;
 }
 
+.yes-no-button {
+  background: none;
+  font-family: "Vast Shadow", cursive;
+  width: 10vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+}
+
 #age-modal-left {
   position: absolute;
   z-index: 1;
@@ -53,7 +61,7 @@
 }
 
 #age-verification-page {
-  display: block;
+  display: none;
 }
 
 #header-text-left {
@@ -76,7 +84,7 @@
 }
 
 #landing-page {
-  display: none;
+  display: block;
 }
 
 #landing-text-left {
@@ -91,6 +99,16 @@
   font-family: "Vast Shadow", cursive;
   font-size: 3vw;
   margin: 2.9vw 1vw;
+}
+
+#no-button {
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #fff;
+}
+
+#no-button:hover {
+  outline: 5px auto black
 }
 
 #page-left {
@@ -123,6 +141,10 @@
   width: 10vw;
 }
 
+#start-button:hover {
+  outline: 5px auto black
+}
+
 #tagline-div {
   background-color: rgba(12, 34, 56, 0.5);
   padding: 0vw 2vw;
@@ -133,25 +155,6 @@
   margin: 0vw;
   color: white;
   font-size: 1.7vw;
-}
-
-#no-button {
-  color: #fff;
-  text-decoration: none;
-  border: 3px solid #fff;
-
-}
-
-#no-button:hover {
-  outline: 5px auto black
-}
-
-.yes-no-button {
-  background: none;
-  font-family: "Vast Shadow", cursive;
-  width: 10vw;
-  height: 5vw;
-  margin-bottom: 1vw;
 }
 
 #yes-button {

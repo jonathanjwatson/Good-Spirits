@@ -2,6 +2,47 @@
   padding-bottom: 2vw;
 }
 
+.back-button {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 85vw;
+  border: 3px solid #000;
+  color: black;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  outline: 5px auto white;
+}
+
+.black-button {
+
+}
+
+.forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
+.forward-button:hover {
+  outline: 5px auto black;
+}
+
+.white-button {
+
+}
+
 .yes-no-button {
   background: none;
   font-family: "Vast Shadow", cursive;
@@ -108,7 +149,7 @@
 }
 
 #no-button:hover {
-  outline: 5px auto black
+  outline: 5px auto black;
 }
 
 #page-left {
@@ -130,19 +171,11 @@
 }
 
 #start-button {
-  position: absolute;
-  z-index: 1;
-  top: 4vw;
-  right: 5vw;
-  border: 3px solid #fff;
-  color: #fff;
-  background: none;
-  letter-spacing: 1px;
-  width: 10vw;
+ 
 }
 
 #start-button:hover {
-  outline: 5px auto black
+
 }
 
 #tagline-div {

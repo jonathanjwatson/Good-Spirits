@@ -38,7 +38,7 @@
       </div>
       <button
         type="button"
-        class="btn btn-secondary"
+        class="btn btn-secondary forward-button"
         id="start-button"
         onclick="toAgeVerificationPage()"
       >
@@ -53,6 +53,7 @@
         </div>
       </div>
     </div>
+
     <!--verification page-->
     <div id="age-verification-page">
       <div class="col-xs-6 fluid-half" id="age-page-left">
@@ -71,6 +72,14 @@
           </div>
         </div>
       </div>
+      <button
+        type="button"
+        class="btn btn-secondary back-button"
+        id="back-button-avp"
+        onclick="toLandingPage()"
+      >
+        BACK
+      </button>
       <div class="col-xs-6 fluid-half" id="age-page-right">
         <div class="example col-xs-6 pull-left">
           <div class="btn" id="age-modal-right">

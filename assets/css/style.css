@@ -28,12 +28,14 @@
   font-family: "Julius Sans One", sans-serif;
   font-size: 7vw;
   margin: 12vw 0vw;
+  position: absolute;
+  right: 1.4vw;
 }
 
 #header-text-right {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 7vw;
-  margin: 12vw 0vw;
+  font-family: 'Vast Shadow', cursive;
+  font-size: 7.5vw;
+  margin: 11.5vw 0vw;
 }
 
 #page-left {

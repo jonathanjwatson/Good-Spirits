@@ -27,7 +27,7 @@
 #header-text-left {
   font-family: "Julius Sans One", sans-serif;
   font-size: 7.5vw;
-  margin: 11.7vw 0vw 0vw; 
+  margin: 11.7vw 0vw 0vw;
   position: absolute;
   right: 1.4vw;
   border-bottom: 5px solid black;
@@ -35,7 +35,7 @@
 }
 
 #header-text-right {
-  font-family: 'Vast Shadow', cursive;
+  font-family: "Vast Shadow", cursive;
   font-size: 7.5vw;
   margin: 11.5vw 0vw 0vw;
   width: 171%;
@@ -52,7 +52,7 @@
 }
 
 #landing-text-right {
-  font-family: 'Vast Shadow', cursive;
+  font-family: "Vast Shadow", cursive;
   font-size: 3vw;
   margin: 2.9vw 1vw;
 }
@@ -73,6 +73,18 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vw;
+}
+
+#start-button {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
 }
 
 #tagline-div {

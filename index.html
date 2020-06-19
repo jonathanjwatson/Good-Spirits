@@ -28,9 +28,9 @@
   <body>
     <!-- landing page -->
     <div id="landing-page">
-      <div class="col-xs-6 fluid-half" id="page-left">
+      <div class="col-xs-6 fluid-half" id="landing-page-left">
         <div class="example col-xs-6 pull-right">
-          <h1 class="text-right" id="header-text-left">Good</h1>
+          <h1 class="text-right" id="landing-header-text-left">Good</h1>
           <h2 class="text-right" id="landing-text-left">
             Music<br />and<br />Booze
           </h2>
@@ -39,14 +39,14 @@
       <button
         type="button"
         class="btn btn-secondary forward-button"
-        id="start-button"
+        id="landing-start-button"
         onclick="toAgeVerificationPage()"
       >
         START
       </button>
-      <div class="col-xs-6 fluid-half" id="page-right">
+      <div class="col-xs-6 fluid-half" id="landing-page-right">
         <div class="example col-xs-6 pull-left">
-          <h1 class="text-left" id="header-text-right">Spirits</h1>
+          <h1 class="text-left" id="landing-header-text-right">Spirits</h1>
           <h2 class="text-left" id="landing-text-right">
             to<br />Improve<br />Your<br />Mood
           </h2>
@@ -91,6 +91,7 @@
               type="button"
               class="btn btn-secondary yes-no-button"
               id="no-button"
+              onclick="toKidsPage()"
             >
               NO
             </button>
@@ -99,13 +100,41 @@
       </div>
     </div>
 
+        <!-- kids page -->
+        <div id="kids-page">
+          <div class="col-xs-6 fluid-half" id="kids-page-left">
+            <div class="example col-xs-6 pull-right">
+              <h1 class="text-right" id="kids-header-text-left">Too</h1>
+              <h2 class="text-right" id="kids-text-left">
+                So
+              </h2>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-secondary back-button-mood-music"
+            id="back-button-kids"
+            onclick="toLandingPage()"
+          >
+            BACK
+          </button>
+          <div class="col-xs-6 fluid-half" id="kids-page-right">
+            <div class="example col-xs-6 pull-left">
+              <h1 class="text-left" id="kids-header-text-right">Bad</h1>
+              <h2 class="text-left" id="kids-text-right">
+                Sad...
+              </h2>
+            </div>
+          </div>
+        </div>
+
     <!-- mood page -->
     <div id="mood-page">
       <div class="jumbotron header">
         <button
           type="button"
           class="btn btn-secondary back-button-mood-music"
-          id="back-button-mood"
+          id="mood-back-button"
           onclick="toLandingPage()"
         >
           BACK
@@ -158,7 +187,7 @@
         <button
           type="button"
           class="btn btn-secondary back-button-mood-music"
-          id="back-button-music"
+          id="music-back-button"
           onclick="toLandingPage()"
         >
           BACK
@@ -168,8 +197,8 @@
         <button
           type="button"
           class="btn btn-secondary forward-button"
-          id="mood-forward-button"
-          onclick="toMusicPage()"
+          id="music-forward-button"
+          onclick="toBoozePage()"
         >
           FORWARD
         </button>
@@ -205,13 +234,77 @@
       </div>
     </div>
 
-    <!-- kid's page -->
-    <div id="kids-page">
+    <!-- booze page -->
+    <div id="booze-page">
+      <div class="jumbotron header">
+        <button
+          type="button"
+          class="btn btn-secondary back-button-mood-music"
+          id="booze-back-button"
+          onclick="toLandingPage()"
+        >
+          BACK
+        </button>
+        <span class="good">Good</span>
+        <span class="spirits">Spirits</span>
+        <button
+          type="button"
+          class="btn btn-secondary forward-button"
+          id="booze-forward-button"
+          onclick="toResultsPage()"
+        >
+          FORWARD
+        </button>
+      </div>
+      <div class="card" id="booze-question-div">
+        <div id="booze-question-text">
+          Select your choice of liquor:
+        </div>
+      </div>
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- results page -->
+    <div id="results-page">
+      <div class="col-xs-6 fluid-half" id="results-page-left">
+        <div class="example col-xs-6 pull-right">
+          <h1 class="text-right" id="results-header-text-left">Listen</h1>
+        </div>
+      </div>
+      <button
+      type="button"
+      class="btn btn-secondary back-button-mood-music"
+      id="back-button-results"
+      onclick="toLandingPage()"
+    >
+      BACK
+    </button>
+      <div class="col-xs-6 fluid-half" id="results-page-right">
+        <div class="example col-xs-6 pull-left">
+          <h1 class="text-left" id="results-header-text-right">Drink</h1>
         </div>
       </div>
     </div>

@@ -296,7 +296,7 @@ img {
 }
 
 #landing-page {
-  display: block;
+  display: none;
 }
 
 #landing-page-left {
@@ -412,6 +412,10 @@ img {
   min-height: 100vw;
 }
 
+#music-player {
+  margin: 26vw -3vw;
+}
+
 #music-question-div {
   background: white;
   width: 47%;
@@ -479,7 +483,7 @@ img {
 }
 
 #results-page {
-  display: none;
+  display: block;
 }
 
 #results-page-left {

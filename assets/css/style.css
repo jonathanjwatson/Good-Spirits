@@ -162,7 +162,13 @@ img {
 }
 
 #booze-page {
+  background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: none;
+  min-height: 100vw;
 }
 
 #header-text-left {
@@ -221,7 +227,7 @@ img {
 }
 
 #landing-page {
-  display: none;
+  display: block;
 }
 
 #landing-text-left {
@@ -315,7 +321,7 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: block;
+  display: none;
   min-height: 100vw;
 }
 

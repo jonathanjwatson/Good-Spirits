@@ -45,5 +45,20 @@ INDIE
 
 Jazz
 
+0: {id: 992028592, readable: true, title: "The Last Time", title_short: "The Last Time", title_version: "", …}
+1: {id: 989465582, readable: true, title: "Yours and Mine", title_short: "Yours and Mine", title_version: "", …}
+2: {id: 992078532, readable: true, title: "Long Gone", title_short: "Long Gone", title_version: "", …}
+3: {id: 986505692, readable: true, title: "Ory's Creole Trombone", ti
+0: {id: 988864032, readable: true, title: "Curro's", title_short: "Curro's", title_version: "", …}
+1: {id: 989464922, readable: true, title: "Thriving on a Riff", title_short: "Thriving on a Riff", title_version: "", …}
+2: {id: 988459002, readable: true, title: "Israel", title_short: "Isr
 
 EDM
+
+0: {id: 470606982, readable: true, title: "Animals", title_short: "Animals", title_version: "", …}
+1: {id: 957925932, readable: true, title: "Higher Ground", title_short: "Higher Ground", title_version: "", …}
+2: {id: 459401542, readable: true, title: "Forbidden Voices", title_
+0: {id: 124433692, readable: true, title: "This One's for You (feat. Zara Larsson) (Official Song UEFA EURO 2016)", title_short: "This One's for You (feat. Zara Larsson) (Official Song UEFA EURO 2016)", title_version: "", …}
+1: {id: 110663020, readable: true, title: "Bang My Head (feat. Sia & Fetty Wap)", title_short: "Bang My Head (feat. Sia & Fetty Wap)", title_version: "", …}
+2: {id: 74457141, readable: true, title: "Shot Me Down (feat. Skylar Grey)", title_short: "Shot Me Down (feat. Skylar Grey)", title_version: "", …}
+3: {id: 473784012, readable: true, title: "Flames", title_short: "Fl

@@ -56,6 +56,8 @@ $(document).ready(function () {
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
 // navigate from landing page to age verification page
+//this function is reponsible for displaying all the results
+
 
 //-------------------------------------------------
 function toAgeVerificationPage() {

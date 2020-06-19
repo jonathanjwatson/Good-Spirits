@@ -100,33 +100,33 @@
       </div>
     </div>
 
-        <!-- kids page -->
-        <div id="kids-page">
-          <div class="col-xs-6 fluid-half" id="kids-page-left">
-            <div class="example col-xs-6 pull-right">
-              <h1 class="text-right" id="kids-header-text-left">Too</h1>
-              <h2 class="text-right" id="kids-text-left">
-                So
-              </h2>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="btn btn-secondary back-button-mood-music"
-            id="back-button-kids"
-            onclick="toLandingPage()"
-          >
-            BACK
-          </button>
-          <div class="col-xs-6 fluid-half" id="kids-page-right">
-            <div class="example col-xs-6 pull-left">
-              <h1 class="text-left" id="kids-header-text-right">Bad</h1>
-              <h2 class="text-left" id="kids-text-right">
-                Sad...
-              </h2>
-            </div>
-          </div>
+    <!-- kids page -->
+    <div id="kids-page">
+      <div class="col-xs-6 fluid-half" id="kids-page-left">
+        <div class="example col-xs-6 pull-right">
+          <h1 class="text-right" id="kids-header-text-left">Too</h1>
+          <h2 class="text-right" id="kids-text-left">
+            So
+          </h2>
         </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-secondary back-button-mood-music"
+        id="back-button-kids"
+        onclick="toLandingPage()"
+      >
+        BACK
+      </button>
+      <div class="col-xs-6 fluid-half" id="kids-page-right">
+        <div class="example col-xs-6 pull-left">
+          <h1 class="text-left" id="kids-header-text-right">Bad</h1>
+          <h2 class="text-left" id="kids-text-right">
+            Sad...
+          </h2>
+        </div>
+      </div>
+    </div>
 
     <!-- mood page -->
     <div id="mood-page">
@@ -292,19 +292,31 @@
       <div class="col-xs-6 fluid-half" id="results-page-left">
         <div class="example col-xs-6 pull-right">
           <h1 class="text-right" id="results-header-text-left">Listen</h1>
+          <h2 id="results-song-title"></h2>
+          <audio controls preload id="music-player">
+            <source
+              src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
         </div>
       </div>
       <button
-      type="button"
-      class="btn btn-secondary back-button-mood-music"
-      id="back-button-results"
-      onclick="toLandingPage()"
-    >
-      BACK
-    </button>
+        type="button"
+        class="btn btn-secondary back-button-mood-music"
+        id="back-button-results"
+        onclick="toLandingPage()"
+      >
+        BACK
+      </button>
       <div class="col-xs-6 fluid-half" id="results-page-right">
         <div class="example col-xs-6 pull-left">
           <h1 class="text-left" id="results-header-text-right">Drink</h1>
+          <div id="results-drink-div">
+            <div id="drink-name"></div>
+            <div id="drink-image"></div>
+            <div id="drink-ingredients"></div>
+          </div>
         </div>
       </div>
     </div>

@@ -102,30 +102,51 @@
     <!-- mood page -->
     <div id="mood-page">
       <div class="jumbotron header">
+        <button
+          type="button"
+          class="btn btn-secondary back-button"
+          id="back-button-mood"
+          onclick="toLandingPage()"
+        >
+          BACK
+        </button>
         <span class="good">Good</span>
         <span class="spirits">Spirits</span>
+        <button
+          type="button"
+          class="btn btn-secondary forward-button"
+          id="mood-forward-button"
+          onclick="toAgeVerificationPage()"
+        >
+          FORWARD
+        </button>
+      </div>
+      <div class="card" id="mood-question-div">
+        <div id="mood-question-text">
+          Select your preferred mood:
+        </div>
       </div>
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4 card">
-            <img src="./assets/images/happy.jpg">
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
-          <div class="col-md-4 card">
-            <img src="./assets/images/happy.jpg">
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
-          <div class="col-md-4 card">
-            <img src="./assets/images/happy.jpg">
+          <div class="col-md-4 top-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 card">
-
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
-          <div class="col-md-4 card">
-
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
-          <div class="col-md-4 card">
-
+          <div class="col-md-4 card bottom-row-card">
+            <img src="./assets/images/happy.jpg" />
           </div>
         </div>
       </div>
@@ -135,15 +156,9 @@
     <div id="kids-page">
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4">
-
-          </div>
-          <div class="col-md-4">
-
-          </div>
-          <div class="col-md-4">
-
-          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
         </div>
       </div>
     </div>

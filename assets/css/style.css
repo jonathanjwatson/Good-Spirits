@@ -1,3 +1,7 @@
+img {
+  width: 100%;
+}
+
 .age-text {
   padding-bottom: 2vw;
 }
@@ -22,6 +26,10 @@
 .black-button {
 }
 
+.bottom-row-card {
+  margin-top: 2vw;
+}
+
 .forward-button {
   position: absolute;
   z-index: 1;
@@ -41,25 +49,29 @@
 .good {
   font-family: "Julius Sans One", sans-serif;
   position: absolute;
-  font-size: 7vw;
-  right: 60vw;
+  font-size: 3vw;
+  right: 59vw;
   padding-bottom: 1.3vw;
-  margin: -5vw;
+  margin: -2.8vw -5vw;
 }
 
 .header {
   z-index: 1 !important;
   background-color: black;
   color: white;
-  padding: 5vw;
+  padding: 3.5vw;
 }
 
 .spirits {
   font-family: "Vast Shadow", cursive;
-  font-size: 7.5vw;
-  margin: -5.7vw 0vw 0vw;
+  font-size: 3.5vw;
+  margin: -3.4vw 0vw 0vw;
   position: absolute;
-  left: 47vw;
+  left: 48vw;
+}
+
+.top-row-card {
+  margin-top: .8vw;
 }
 
 .white-button {
@@ -127,6 +139,20 @@
   display: none;
 }
 
+#back-button-mood {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 85vw;
+  border: 3px solid white;
+  color: white;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+
+}
+
 #header-text-left {
   font-family: "Julius Sans One", sans-serif;
   font-size: 7.5vw;
@@ -168,6 +194,18 @@
   margin: 2.9vw 1vw;
 }
 
+#mood-forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
 #mood-left {
 
 }
@@ -180,6 +218,25 @@
   background-size: cover;
   display: block;
   min-height: 100vw;
+}
+
+#mood-question-div {
+  background: white;
+  width: 47%;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  top: 6vw;
+  border-radius: 5px;
+  right: 26vw;
+  opacity: 0.7;
+}
+
+#mood-question-text {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.5vw;
+  margin: 0.8vw 3.8vw;
+  color: black;
 }
 
 #mood-right {

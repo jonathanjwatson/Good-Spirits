@@ -259,7 +259,7 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: block;
+  display: none;
   min-height: 100vw;
 }
 
@@ -310,12 +310,12 @@ img {
 }
 
 #music-page {
-  background: url(../images/Green.jpg) no-repeat center center fixed;
+  background: url(../images/BlackandGreen.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: none;
+  display: block;
   min-height: 100vw;
 }
 

@@ -1,0 +1,300 @@
+img {
+  width: 100%;
+}
+
+.age-text {
+  padding-bottom: 2vw;
+}
+
+.back-button {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 85vw;
+  border: 3px solid #000;
+  color: black;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  outline: 5px auto white;
+}
+
+.black-button {
+}
+
+.bottom-row-card {
+  margin-top: 2vw;
+}
+
+.forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
+.forward-button:hover {
+  outline: 5px auto black;
+}
+
+.good {
+  font-family: "Julius Sans One", sans-serif;
+  position: absolute;
+  font-size: 3vw;
+  right: 59vw;
+  padding-bottom: 1.3vw;
+  margin: -2.8vw -5vw;
+}
+
+.header {
+  z-index: 1 !important;
+  background-color: black;
+  color: white;
+  padding: 3.5vw;
+}
+
+.spirits {
+  font-family: "Vast Shadow", cursive;
+  font-size: 3.5vw;
+  margin: -3.4vw 0vw 0vw;
+  position: absolute;
+  left: 48vw;
+}
+
+.top-row-card {
+  margin-top: .8vw;
+}
+
+.white-button {
+}
+
+.yes-no-button {
+  background: none;
+  font-family: "Vast Shadow", cursive;
+  width: 10vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+}
+
+#age-modal-left {
+  position: absolute;
+  z-index: 1;
+  border: 3px solid #000;
+  border-right: none;
+  color: #000;
+  background: none;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3vw;
+  margin: 15vw 0vw;
+  padding: 3vw;
+}
+
+#age-modal-right {
+  position: absolute;
+  z-index: 1;
+  border: 3px solid white;
+  border-left: none;
+  color: white;
+  background: none;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3vw;
+  margin: 15vw -2vw;
+  padding: 3vw;
+}
+
+#age-page-left {
+  background: url(../images/White.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+  color: black;
+}
+
+#age-page-right {
+  background: url(../images/Black.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+  color: white;
+}
+
+#age-verification-page {
+  display: none;
+}
+
+#back-button-mood {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 85vw;
+  border: 3px solid white;
+  color: white;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+
+}
+
+#header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 7.5vw;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.3vw;
+}
+
+#header-text-right {
+  font-family: "Vast Shadow", cursive;
+  font-size: 7.5vw;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.4vw;
+}
+
+#kids-page {
+  display: none;
+}
+
+#landing-page {
+  display: none;
+}
+
+#landing-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4vw;
+  margin: 24.8vw 0vw;
+  position: absolute;
+  right: 2vw;
+}
+
+#landing-text-right {
+  font-family: "Vast Shadow", cursive;
+  font-size: 3vw;
+  margin: 2.9vw 1vw;
+}
+
+#mood-forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
+#mood-left {
+
+}
+
+#mood-page {
+  background: url(../images/Red.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  min-height: 100vw;
+}
+
+#mood-question-div {
+  background: white;
+  width: 47%;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  top: 6vw;
+  border-radius: 5px;
+  right: 26vw;
+  opacity: 0.7;
+}
+
+#mood-question-text {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.5vw;
+  margin: 0.8vw 3.8vw;
+  color: black;
+}
+
+#mood-right {
+
+}
+
+#no-button {
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #fff;
+}
+
+#no-button:hover {
+  outline: 5px auto black;
+}
+
+#page-left {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#page-right {
+  background: url(../images/Blue.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#start-button {
+}
+
+#start-button:hover {
+}
+
+#tagline-div {
+  background-color: rgba(12, 34, 56, 0.5);
+  padding: 0vw 2vw;
+}
+
+#tagline-text {
+  font-family: "Lexend Tera", sans-serif;
+  margin: 0vw;
+  color: white;
+  font-size: 1.7vw;
+}
+
+#yes-button {
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+}
+
+#yes-button:hover {
+  outline: 5px auto white;
+}

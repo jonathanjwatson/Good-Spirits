@@ -247,8 +247,32 @@ img {
 
 }
 
+#mood-forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
+#music-forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
 #music-page {
-  background: url(../images/) no-repeat center center fixed;
+  background: url(../images/Green.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

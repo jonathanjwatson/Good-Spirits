@@ -15,6 +15,8 @@ function toLandingPage() {
   $("#age-verification-page").hide();
   $("#mood-page").hide();
   $("#music-page").hide();
+  $("#kids-page").hide();
+  $("#booze-page").hide();
 }
 // if user is 21, this navigates forward to mood page
 function toMoodPage() {
@@ -30,4 +32,9 @@ function toMusicPage() {
 function toKidsPage() {
   $("#age-verification-page").hide();
   $("#kids-page").show();
+}
+
+function toBoozePage() {
+  $("#booze-page").show();
+  $("#music-page").hide();
 }

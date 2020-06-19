@@ -161,6 +161,10 @@ img {
 
 }
 
+#booze-page {
+  display: none;
+}
+
 #header-text-left {
   font-family: "Julius Sans One", sans-serif;
   font-size: 7.5vw;
@@ -181,7 +185,7 @@ img {
 }
 
 #kids-page {
-  display: block;
+  display: none;
 }
 
 #kids-page-left {
@@ -250,12 +254,12 @@ img {
 }
 
 #mood-page {
-  background: url(../images/Red.jpg) no-repeat center center fixed;
+  background: url(../images/BlackandRed.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: none;
+  display: block;
   min-height: 100vw;
 }
 

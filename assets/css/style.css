@@ -161,6 +161,18 @@ img {
 
 }
 
+#booze-forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+}
+
 #booze-page {
   background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -169,6 +181,25 @@ img {
   background-size: cover;
   display: none;
   min-height: 100vw;
+}
+
+#booze-question-div {
+  background: white;
+  width: 47%;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  top: 6vw;
+  border-radius: 5px;
+  right: 26vw;
+  opacity: 0.7;
+}
+
+#booze-question-text {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4vw;
+  margin: 0.8vw 3.8vw;
+  color: black;
 }
 
 #header-text-left {
@@ -182,6 +213,25 @@ img {
 }
 
 #header-text-right {
+  font-family: "Vast Shadow", cursive;
+  font-size: 7.5vw;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.4vw;
+}
+
+#kids-header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 7.5vw;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.3vw;
+}
+
+#kids-header-text-right {
   font-family: "Vast Shadow", cursive;
   font-size: 7.5vw;
   margin: 11.5vw 0vw 0vw;
@@ -226,8 +276,45 @@ img {
   margin: 2.9vw 1vw;
 }
 
+#landing-header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 7.5vw;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.3vw;
+}
+
+#landing-header-text-right {
+  font-family: "Vast Shadow", cursive;
+  font-size: 7.5vw;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.4vw;
+}
+
 #landing-page {
   display: block;
+}
+
+#landing-page-left {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#landing-page-right {
+  background: url(../images/Blue.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
 }
 
 #landing-text-left {
@@ -413,10 +500,10 @@ img {
   height: 100vw;
 }
 
-#start-button {
+#landing-start-button {
 }
 
-#start-button:hover {
+#landing-start-button:hover {
 }
 
 #tagline-div {

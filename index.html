@@ -223,7 +223,7 @@
           type="button"
           class="btn btn-secondary forward-button"
           id="music-forward-button"
-          onclick="toBoozePage()"
+          onclick="toResultsPage()"
         >
           FORWARD
         </button>
@@ -255,6 +255,28 @@
           <div class="col-md-4 card bottom-row-card">
             <img src="./assets/images/happy.jpg" />
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- results page -->
+    <div id="results-page">
+      <div class="col-xs-6 fluid-half" id="results-page-left">
+        <div class="example col-xs-6 pull-right">
+          <h1 class="text-right" id="results-header-text-left">Listen</h1>
+        </div>
+      </div>
+      <button
+      type="button"
+      class="btn btn-secondary back-button-mood-music"
+      id="back-button-results"
+      onclick="toLandingPage()"
+    >
+      BACK
+    </button>
+      <div class="col-xs-6 fluid-half" id="results-page-right">
+        <div class="example col-xs-6 pull-left">
+          <h1 class="text-left" id="results-header-text-right">Drink</h1>
         </div>
       </div>
     </div>

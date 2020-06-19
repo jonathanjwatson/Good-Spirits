@@ -372,6 +372,47 @@ img {
   height: 100vw;
 }
 
+#results-header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 7.5vw;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.3vw;
+}
+
+#results-header-text-right {
+  font-family: "Vast Shadow", cursive;
+  font-size: 7.5vw;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  border-bottom: 5px solid black;
+  padding-bottom: 1.4vw;
+}
+
+#results-page {
+  display: none;
+}
+
+#results-page-left {
+  background: url(../images/Red.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#results-page-right {
+  background: url(../images/Purple.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
 #start-button {
 }
 

@@ -177,7 +177,7 @@ img {
 }
 
 #landing-page {
-  display: none;
+  display: block;
 }
 
 #landing-text-left {
@@ -216,7 +216,7 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: block;
+  display: none;
   min-height: 100vw;
 }
 

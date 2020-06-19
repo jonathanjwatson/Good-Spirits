@@ -13,6 +13,7 @@ function toAgeVerificationPage() {
 function toLandingPage() {
   $("#landing-page").show();
   $("#age-verification-page").hide();
+  $("#mood-page").hide();
 }
 
 function toMoodPage() {

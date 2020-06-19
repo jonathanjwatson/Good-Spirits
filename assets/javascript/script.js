@@ -14,9 +14,15 @@ function toLandingPage() {
   $("#landing-page").show();
   $("#age-verification-page").hide();
   $("#mood-page").hide();
+  $("#music-page").hide();
 }
 
 function toMoodPage() {
   $("#mood-page").show();
   $("#age-verification-page").hide();
+}
+
+function toMusicPage() {
+  $("#mood-page").hide();
+  $("#music-page").show();
 }

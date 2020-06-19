@@ -1,7 +1,8 @@
 var songs = [];
 var availLiquor = [];
 var ingredientString = [];
-
+var seconds = 0;
+//look into switch cases to 
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
   var queryInitial =
@@ -21,7 +22,7 @@ $(document).ready(function () {
       var key = "strIngredient" + i;
       if (response.drinks[0][key] !== null) {
         ingredientString.push(response.drinks[0][key]);
-      //ingredientString = ingredientString + " " + response.drinks[0][key];
+        //ingredientString = ingredientString + " " + response.drinks[0][key];
         // availLiquor[i].ingredients.push(response.drinks[0][key]);
         // console.log(availLiquor[i].ingredients);
         //$("#ingredients-here").append(response.drinks[0][key]);
@@ -32,7 +33,6 @@ $(document).ready(function () {
     //$("#drinks-here").append(response.drinks[0].strDrink);
   });
 
-  
   var search = "eminem";
   var settings = {
     async: true,
@@ -44,7 +44,7 @@ $(document).ready(function () {
       "x-rapidapi-key": "c44498c14bmsh109c8caa20abc0ep12e719jsnc8f75e4181e0",
     },
   };
-//in this anonymous function I will pass in the name of the song and save all data to be displayed.
+  //in this anonymous function I will pass in the name of the song and save all data to be displayed.
   $.ajax(settings).done(function (response) {
     console.log(response);
     console.log(response.data[0].preview);
@@ -56,8 +56,24 @@ $(document).ready(function () {
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
 // navigate from landing page to age verification page
-//this function is reponsible for displaying all the results
 
+//on click on play button, this function is responsible for updating the playlist song, will need a counter incrementing every second until 30, when this happens change the src attr in the audio tag and replace it with the next song.
+function playlist(){
+  console.log("Playlist was called!");
+  $("#music-player-source").attr("src","https://cdns-preview-9.dzcdn.net/stream/c-9571d1a0be0db0b03e001cbdaffdc458-7.mp3");
+    seconds += 1;
+    if(seconds==30){
+     // $("#music-player-source").attr("src","https://deezerdevs-deezer.p.rapidapi.com/search?q=rick+ross");
+
+    }
+}
+playlist();
+//var cancel = setInterval(playlist, 1000);
+
+//this function is responsible for displaying all the results
+function displayItems(){
+  
+}
 
 //-------------------------------------------------
 function toAgeVerificationPage() {
@@ -101,4 +117,3 @@ function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();
 }
-

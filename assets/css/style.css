@@ -376,4 +376,20 @@ img {
   .custom-text-right {
     margin: 3.9vw 1vw;
   }
+  .back-button-white {
+    margin: -.5vw;
+  }
+  .forward-button {
+    margin: -.5vw;
+  }
+  .question-div {
+    top: 8.5vw;
+  }
+  .custom-row-card {
+    margin: 6vw 1.6vw 0vw;
+  }
+  #music-player {
+    left: -7.5vw;
+    top: 6vw;
+  }
 }

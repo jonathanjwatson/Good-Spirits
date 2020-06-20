@@ -412,28 +412,28 @@ img {
 
 @media screen and (max-width: 992px) {
   .header-text-left {
-    margin: 15vw 0vw 0vw;
+    margin: 15vw 5vw 0vw;
   }
   .custom-text-left {
-    margin: 29vw 0vw;
+    margin: 29vw 4.5vw;
   }
   #landing-start-button {
     margin: 2vw;
   }
   .header-text-right {
-    margin: 14.8vw 0vw 0vw;
+    margin: 14.8vw 5vw 0vw;
   }
   .custom-text-right {
-    margin: 3.9vw 1vw;
+    margin: 4vw 5vw 0vw;
   }
   .back-button-white {
-    margin: -0.5vw;
+    margin: .1vw;
   }
   .forward-button {
-    margin: -0.5vw;
+    margin: 0vw;
   }
   .question-div {
-    top: 8.5vw;
+    top: 9vw;
   }
   .custom-row-card {
     margin: 6vw 1.6vw 0vw;
@@ -441,6 +441,18 @@ img {
   #music-player {
     left: -7.5vw;
     top: 6vw;
+  }
+  #age-modal-left {
+    margin: 15vw -1.5vw;
+  }
+  .header-questions {
+    padding: 4.5vw 0vw 3vw;
+  }
+  #results-header-text-right {
+    margin: 14.8vw -1vw 0vw;
+  }
+  #results-header-text-left {
+    margin: 15vw 0vw;
   }
 }
 

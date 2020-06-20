@@ -256,7 +256,7 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw 0vw;
+  margin: 15vw -.4vw;
   padding: 3vw;
 }
 
@@ -360,6 +360,12 @@ img {
 }
 
 /* media queries =============================== */
+@media screen and (max-width: 1100px) {
+  #age-modal-left {
+    margin: 15vw -1vw;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header-text-left {
     margin: 15vw 0vw 0vw;
@@ -391,5 +397,61 @@ img {
   #music-player {
     left: -7.5vw;
     top: 6vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-text-left {
+    right: 25%;
+  }
+  .custom-text-left {
+    margin: 32vw 0vw;
+    right: 25%;
+  }
+  .header-text-right {
+    margin: 14.8vw 4vw 0vw;
+  }
+  .custom-text-right {
+    margin: 6.5vw 4vw;
+    right: 50%;
+  }
+  #age-modal-left {
+    margin: 15vw -3vw;
+  }
+  .header {
+    padding: 10vw;
+  }
+  .back-button-white {
+    top: 5vw;
+  }
+  .good {
+    font-size: 5vw;
+    right: 60vw;
+    margin: -6.8vw -5vw;
+  }
+  .spirits {
+    font-size: 5vw;
+    margin: -7vw 0vw 0vw;
+  }
+  .forward-button {
+    top: 5vw;
+    width: 13.5vw;
+  }
+  .question-div {
+    top: 11.5vw;
+    height: 6vw;
+  }
+  #results-header-text-left {
+    margin: 20vw -3vw;
+  }
+  #music-player {
+    left: -12vw;
+    top: 15vw;
+  }
+  #results-header-text-right {
+    margin: 20vw 0vw;
+  }
+  #kids-header-text-right {
+    width: 107%;
   }
 }

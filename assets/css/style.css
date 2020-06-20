@@ -245,7 +245,7 @@ img {
   z-index: 1 !important;
   background-color: black;
   color: white;
-  padding: 4.5vw 0vw .5vw;
+  padding: 4.5vw 0vw 0.5vw;
 }
 
 .header-questions {
@@ -427,7 +427,7 @@ img {
     margin: 4vw 5vw 0vw;
   }
   .back-button-white {
-    margin: .1vw;
+    margin: 0.1vw;
   }
   .forward-button {
     margin: 0vw;
@@ -457,25 +457,29 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .header-text-left {
-    right: 25%;
-  }
   .custom-text-left {
-    margin: 32vw 0vw;
+    margin: 36vw -3vw;
     right: 25%;
+    font-size: 6vw;
   }
-  .header-text-right {
-    margin: 14.8vw 4vw 0vw;
-  }
+
   .custom-text-right {
-    margin: 6.5vw 4vw;
-    right: 50%;
+    font-size: 4.5vw;
+    margin: 8.5vw 1vw;
   }
   #age-modal-left {
-    margin: 15vw -3vw;
+    margin: 15vw -16vw;
+    padding: 4vw;
+  }
+  #age-modal-right {
+    margin: 15vw -2vw;
+    padding: 4vw;
+  }
+  .age-text {
+    font-size: 5vw;
   }
   .header {
-    padding: 10vw;
+    padding: 11vw 0vw 3.5vw;
   }
   .back-button-white {
     top: 5vw;
@@ -509,5 +513,111 @@ img {
   }
   #kids-header-text-right {
     width: 107%;
+  }
+  #landing-text-right {
+    position: absolute;
+    top: 25.4vw;
+    left: 4vw;
+    font-size: 5vw;
+  }
+  #landing-header-text-right {
+    margin: 14.5vw 3vw;
+  }
+  #landing-header-text-left {
+    margin: 14.5vw 4vw 0vw;
+  }
+  #landing-text-left {
+    position: absolute;
+    top: -1.6vw;
+    right: 8.1vw;
+    font-size: 6.7vw;
+  }
+  #kids-header-text-left {
+    font-size: 10vw;
+  }
+  #kids-text-left {
+    margin-right: 0vw;
+  }
+  #kids-header-text-right {
+    font-size: 10vw;
+    width: 143%;
+  }
+  #kids-text-right {
+    font-size: 6vw;
+    margin: 8vw 5vw;
+  }
+  .question-div {
+    top: 16.5vw;
+    height: 9vw;
+  }
+  .question-text {
+    margin: 2.9vw 3.3vw;
+  }
+  .custom-row-card {
+    margin: 11vw 15.6vw -5vw;
+  }
+  #zen {
+    position: absolute;
+    top: 0vw;
+    left: 39vw;
+  }
+
+  #sad {
+    position: absolute;
+    top: 23.4vw;
+    left: 39vw;
+  }
+  #calm {
+    position: absolute;
+    top: 47vw;
+    left: 39vw;
+  }
+  #randb {
+    position: absolute;
+    top: 0vw;
+    left: 39vw;
+  }
+
+  #country {
+    position: absolute;
+    top: 23.4vw;
+    left: 39vw;
+  }
+  #edm {
+    position: absolute;
+    top: 47vw;
+    left: 39vw;
+  }
+  #randb {
+    position: absolute;
+    top: 0vw;
+    left: 39vw;
+  }
+
+  #country {
+    position: absolute;
+    top: 23.4vw;
+    left: 39vw;
+  }
+  #edm {
+    position: absolute;
+    top: 47vw;
+    left: 39vw;
+  }
+  #tequila {
+    position: absolute;
+    top: 0vw;
+    left: 39vw;
+  }
+
+  #vodka {
+    position: absolute;
+    top: 23.4vw;
+    left: 39vw;
+  }
+  #gin {
+    position: absolute;
+    top: 47vw;
+    left: 39vw;
   }
 }

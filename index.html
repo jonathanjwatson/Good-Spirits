@@ -314,19 +314,21 @@
     <div id="results-page">
       <div class="col-xs-6 fluid-half background-left" id="results-page-left">
         <div class="example col-xs-6 pull-right">
-          <h1
-            class="text-right header-text header-text-left"
-            id="results-header-text-left"
-          >
-            Listen
-          </h1>
-          <h2 id="results-song-title"></h2>
-          <audio controls preload id="music-player">
-            <source
-              src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
-              type="audio/mpeg"
-            />
-          </audio>
+          <div id="music-display-div">
+            <h1
+              class="text-right header-text header-text-left"
+              id="results-header-text-left"
+            >
+              Listen
+            </h1>
+            <h2 id="results-song-title"></h2>
+            <audio controls preload id="music-player">
+              <source
+                src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
       </div>
       <button
@@ -339,16 +341,18 @@
       </button>
       <div class="col-xs-6 fluid-half background-right" id="results-page-right">
         <div class="example col-xs-6 pull-left">
-          <h1
-            class="text-left header-text header-text-right"
-            id="results-header-text-right"
-          >
-            Drink
-          </h1>
-          <div id="results-drink-div">
-            <div id="drink-name"></div>
-            <div id="drink-image"></div>
-            <div id="drink-ingredients"></div>
+          <div id="cocktail-display-div">
+            <h1
+              class="text-left header-text header-text-right"
+              id="results-header-text-right"
+            >
+              Drink
+            </h1>
+            <div id="results-drink-div">
+              <div id="drink-name"></div>
+              <div id="drink-image"></div>
+              <div id="drink-ingredients"></div>
+            </div>
           </div>
         </div>
       </div>

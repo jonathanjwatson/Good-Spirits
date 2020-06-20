@@ -303,11 +303,25 @@ img {
   font-size: 2.4vw;
 }
 
-/* music player on results page ==================== */
+/* music player and cocktail display on results page ==================== */
+#music-display-div {
+  width: 75%;
+  position: absolute;
+  left: -4vw;
+}
+
 #music-player {
   margin: 26vw -3vw;
+  position: absolute;
   box-shadow: 3px 3px 20px #333;
   border-radius: 25px;
+  left: -4.5vw;
+}
+
+#cocktail-display-div {
+  width: 75%;
+  position: absolute;
+  right: -4vw;
 }
 
 /* yes and no buttons ============================= */
@@ -345,4 +359,21 @@ img {
   text-shadow: 1px 1px 0 #333;
 }
 
-
+/* media queries =============================== */
+@media screen and (max-width: 992px) {
+  .header-text-left {
+    margin: 15vw 0vw 0vw;
+  }
+  .custom-text-left {
+    margin: 29vw 0vw;
+  }
+  #landing-start-button {
+    margin: 2vw;
+  }
+  .header-text-right {
+    margin: 14.8vw 0vw 0vw;
+  }
+  .custom-text-right {
+    margin: 3.9vw 1vw;
+  }
+}

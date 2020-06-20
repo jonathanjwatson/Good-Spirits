@@ -1,12 +1,137 @@
-img {
-  width: 100%;
+/* page ids ========================================= */
+#landing-page {
+  display: block;
 }
 
-.age-text {
-  padding-bottom: 2vw;
+#age-verification-page {
+  display: none;
 }
 
-.back-button {
+#kids-page {
+  display: none;
+}
+
+.single-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vw;
+  display: none;
+}
+
+#mood-page {
+  background: url(../images/BlackandRed.jpg) no-repeat center center fixed;
+}
+
+#music-page {
+  background: url(../images/BlackandGreen.jpg) no-repeat center center fixed;
+}
+
+#booze-page {
+  background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
+}
+
+#results-page {
+  display: none;
+}
+
+/* backgrounds, page left and right ================ */
+.background-left {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+.background-right {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+#landing-page-left {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
+}
+
+#landing-page-right {
+  background: url(../images/Blue.jpg) no-repeat center center fixed;
+}
+
+#age-page-left {
+  background: url(../images/White.jpg) no-repeat center center fixed;
+  color: black;
+}
+
+#age-page-right {
+  background: url(../images/Black.jpg) no-repeat center center fixed;
+  color: white;
+}
+
+#kids-page-left {
+  background: url(../images/Green.jpg) no-repeat center center fixed;
+}
+
+#kids-page-right {
+  background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+#results-page-left {
+  background: url(../images/Red.jpg) no-repeat center center fixed;
+}
+
+#results-page-right {
+  background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+/* header text =================================== */
+.header-text {
+  font-size: 7.5vw;
+  border-bottom: 5px solid black;
+}
+
+.header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  padding-bottom: 1.3vw;
+}
+
+.header-text-right {
+  font-family: "Vast Shadow", cursive;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  padding-bottom: 1.4vw;
+}
+
+/* text left and right ============================ */
+.custom-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4vw;
+  margin: 24.8vw 0vw;
+  position: absolute;
+  right: 2vw;
+}
+
+.custom-text-right {
+  font-family: "Vast Shadow", cursive;
+  margin: 2.9vw 1vw;
+}
+
+#landing-text-right {
+  font-size: 3vw;
+}
+
+#kids-text-right {
+  font-size: 4.2vw;
+}
+
+/* back buttons ================================== */
+.back-button-black {
   position: absolute;
   z-index: 1;
   top: 4vw;
@@ -19,11 +144,11 @@ img {
   text-decoration: none;
 }
 
-.back-button:hover {
+.back-button-black:hover {
   outline: 5px auto white;
 }
 
-.back-button-mood-music {
+.back-button-white {
   position: absolute;
   z-index: 1;
   top: 2vw;
@@ -36,22 +161,16 @@ img {
   text-decoration: none;
 }
 
-.back-button-mood-music:hover {
+.back-button-white:hover {
   outline: 5px auto black;
   color: white;
 }
 
-.black-button {
-}
-
-.bottom-row-card {
-  margin-top: 2vw;
-}
-
+/* forward buttons ================================== */
 .forward-button {
   position: absolute;
   z-index: 1;
-  top: 4vw;
+  top: 2vw;
   right: 5vw;
   border: 3px solid #fff;
   color: #fff;
@@ -62,6 +181,18 @@ img {
 
 .forward-button:hover {
   outline: 5px auto black;
+}
+
+img {
+  width: 100%;
+}
+
+.age-text {
+  padding-bottom: 2vw;
+}
+
+.bottom-row-card {
+  margin-top: 2vw;
 }
 
 .good {
@@ -90,17 +221,6 @@ img {
 
 .top-row-card {
   margin-top: 5vw;
-}
-
-.white-button {
-}
-
-.yes-no-button {
-  background: none;
-  font-family: "Vast Shadow", cursive;
-  width: 10vw;
-  height: 5vw;
-  margin-bottom: 1vw;
 }
 
 #age-modal-left {
@@ -133,58 +253,12 @@ img {
   padding: 3vw;
 }
 
-#age-page-left {
-  background: url(../images/White.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-  color: black;
-}
 
-#age-page-right {
-  background: url(../images/Black.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-  color: white;
-}
 
-#age-verification-page {
-  display: none;
-}
 
-#back-button-kids {
-
-}
-
-#booze-forward-button {
-  position: absolute;
-  z-index: 1;
-  top: 2vw;
-  right: 5vw;
-  border: 3px solid #fff;
-  color: #fff;
-  background: none;
-  letter-spacing: 1px;
-  width: 10vw;
-}
-
-#booze-page {
-  background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: none;
-  min-height: 100vw;
-}
-
-#booze-question-div {
-  background: white;
+/* question text and div ============================= */
+.question-div {
+  background-color: rgba(255,255,255,0.5);  
   width: 47%;
   height: 5vw;
   position: absolute;
@@ -192,247 +266,35 @@ img {
   top: 6vw;
   border-radius: 5px;
   right: 26vw;
-  opacity: 0.7;
 }
 
-#booze-question-text {
-  font-family: "Homemade Apple", cursive;
-  font-size: 2.4vw;
-  margin: 0.8vw 3.8vw;
-  color: black;
-}
-
-#header-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 7.5vw;
-  margin: 11.7vw 0vw 0vw;
-  position: absolute;
-  right: 1.4vw;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.3vw;
-}
-
-#header-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 7.5vw;
-  margin: 11.5vw 0vw 0vw;
-  width: 171%;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.4vw;
-}
-
-#kids-header-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 7.5vw;
-  margin: 11.7vw 0vw 0vw;
-  position: absolute;
-  right: 1.4vw;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.3vw;
-}
-
-#kids-header-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 7.5vw;
-  margin: 11.5vw 0vw 0vw;
-  width: 171%;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.4vw;
-}
-
-#kids-page {
-  display: none;
-}
-
-#kids-page-left {
-  background: url(../images/Green.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#kids-page-right {
-  background: url(../images/Purple.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#kids-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 4vw;
-  margin: 24.8vw 0vw;
-  position: absolute;
-  right: 2vw;
-}
-
-#kids-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 4.2vw;
-  margin: 2.9vw 1vw;
-}
-
-#landing-header-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 7.5vw;
-  margin: 11.7vw 0vw 0vw;
-  position: absolute;
-  right: 1.4vw;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.3vw;
-}
-
-#landing-header-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 7.5vw;
-  margin: 11.5vw 0vw 0vw;
-  width: 171%;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.4vw;
-}
-
-#landing-page {
-  display: block;
-}
-
-#landing-page-left {
-  background: url(../images/Yellow.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#landing-page-right {
-  background: url(../images/Blue.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#landing-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 4vw;
-  margin: 24.8vw 0vw;
-  position: absolute;
-  right: 2vw;
-}
-
-#landing-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 3vw;
-  margin: 2.9vw 1vw;
-}
-
-#mood-forward-button {
-  position: absolute;
-  z-index: 1;
-  top: 2vw;
-  right: 5vw;
-  border: 3px solid #fff;
-  color: #fff;
-  background: none;
-  letter-spacing: 1px;
-  width: 10vw;
-}
-
-#mood-left {
-}
-
-#mood-page {
-  background: url(../images/BlackandRed.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: none;
-  min-height: 100vw;
-}
-
-#mood-question-div {
-  background: white;
-  width: 47%;
-  height: 5vw;
-  position: absolute;
-  z-index: 1;
-  top: 6vw;
-  border-radius: 5px;
-  right: 26vw;
-  opacity: 0.5;
-}
-
-#mood-question-text {
+.question-text {
+  z-index: 2;
+  -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   font-family: "Homemade Apple", cursive;
   font-size: 2.5vw;
-  margin: -2.5vw 30.3vw;
+  margin: .9vw 3.3vw;  
   color: white;
 }
 
-#mood-right {
-}
-
-#mood-forward-button {
-  position: absolute;
-  z-index: 1;
-  top: 2vw;
-  right: 5vw;
-  border: 3px solid #fff;
-  color: #fff;
-  background: none;
-  letter-spacing: 1px;
-  width: 10vw;
-}
-
-#music-forward-button {
-  position: absolute;
-  z-index: 1;
-  top: 2vw;
-  right: 5vw;
-  border: 3px solid #fff;
-  color: #fff;
-  background: none;
-  letter-spacing: 1px;
-  width: 10vw;
-}
-
-#music-page {
-  background: url(../images/BlackandGreen.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: none;
-  min-height: 100vw;
-}
-
+/* music player on results page ==================== */
 #music-player {
   margin: 26vw -3vw;
 }
 
-#music-question-div {
-  background: white;
-  width: 47%;
+/* yes and no buttons ============================= */
+.yes-no-button {
+  background: none;
+  font-family: "Vast Shadow", cursive;
+  width: 10vw;
   height: 5vw;
-  position: absolute;
-  z-index: 1;
-  top: 6vw;
-  border-radius: 5px;
-  right: 26vw;
-  opacity: 0.7;
-}
-
-#music-question-text {
-  font-family: "Homemade Apple", cursive;
-  font-size: 2.4vw;
-  margin: 0.8vw 3.8vw;
-  color: black;
+  margin-bottom: 1vw;
 }
 
 #no-button {
@@ -443,83 +305,6 @@ img {
 
 #no-button:hover {
   outline: 5px auto black;
-}
-
-#page-left {
-  background: url(../images/Yellow.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#page-right {
-  background: url(../images/Blue.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#results-header-text-left {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 7.5vw;
-  margin: 11.7vw 0vw 0vw;
-  position: absolute;
-  right: 1.4vw;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.3vw;
-}
-
-#results-header-text-right {
-  font-family: "Vast Shadow", cursive;
-  font-size: 7.5vw;
-  margin: 11.5vw 0vw 0vw;
-  width: 171%;
-  border-bottom: 5px solid black;
-  padding-bottom: 1.4vw;
-}
-
-#results-page {
-  display: none;
-}
-
-#results-page-left {
-  background: url(../images/Red.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#results-page-right {
-  background: url(../images/Purple.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vw;
-}
-
-#landing-start-button {
-}
-
-#landing-start-button:hover {
-}
-
-#tagline-div {
-  background-color: rgba(12, 34, 56, 0.5);
-  padding: 0vw 2vw;
-}
-
-#tagline-text {
-  font-family: "Lexend Tera", sans-serif;
-  margin: 0vw;
-  color: white;
-  font-size: 1.7vw;
 }
 
 #yes-button {

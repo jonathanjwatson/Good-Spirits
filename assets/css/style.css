@@ -502,7 +502,7 @@ img {
     height: 6vw;
   }
   #results-header-text-left {
-    margin: 20vw -3vw;
+    margin: 20vw 0vw;
   }
   #music-player {
     left: -12vw;
@@ -619,5 +619,8 @@ img {
     position: absolute;
     top: 47vw;
     left: 39vw;
+  }
+  #results-header {
+    padding: 11vw 0vw 0vw;
   }
 }

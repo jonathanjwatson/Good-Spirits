@@ -17,7 +17,7 @@ $(document).ready(function () {
     // in this function I will pass in the name of drink and save all data needed to be displayed.
     //$("#drinks-here").append(response.drinks[0].strDrink);
     // $("#instructions-here").append(response.drinks[0].strInstructions);
-
+    drinkPics.push(response.drinks[0]["strDrinkThumb"]);
     for (var i = 1; i <= 15; i++) {
       var key = "strIngredient" + i;
       if (response.drinks[0][key] !== null) {
@@ -48,32 +48,68 @@ $(document).ready(function () {
   $.ajax(settings).done(function (response) {
     console.log(response);
     console.log(response.data[0].preview);
-
     //  $("#info-here").append(response.hosts.images);
   });
 });
+//updates song taking in mp3 file
+function makeMusic(mp3){
+  $("#music-player")[0].src = mp3;
+  
+}
 
+// function getDrinkData(drinkTarget){
+//   var queryInitial =
+//     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+//   var searchDrink = drinkTarget;
+//   var queryURL = queryInitial + searchDrink;
+//   $.ajax({
+//     url: queryURL,
+//     method: "GET",
+//   }).then(function (response) {
+//     console.log(response);
+//     // in this function I will pass in the name of drink and save all data needed to be displayed.
+//     //$("#drinks-here").append(response.drinks[0].strDrink);
+//     // $("#instructions-here").append(response.drinks[0].strInstructions);
+//     drinkPics.push(response.drinks[0]["strDrinkThumb"]);
+//     drinkInstr.push(response.drink[0]["strInstructions"]);
+//     for (var i = 1; i <= 15; i++) {
+//       var key = "strIngredient" + i;
+//       if (response.drinks[0][key] !== null) {
+//         ingredientString.push(response.drinks[0][key]);
+//       //  drinkPics.push(response.drinks[0]["strDrinkThumb"]);
+//         // console.log("Pic: " + response.drinks[0]["strDrinkThumb"]);
+//          console.log("drinkPics " + drinkPics);
+//       //ingredientString = ingredientString + " " + response.drinks[0][key];
+//         // availLiquor[i].ingredients.push(response.drinks[0][key]);
+//         // console.log(availLiquor[i].ingredients);
+//         //$("#ingredients-here").append(response.drinks[0][key]);
+//       }
+//       console.log(response.drinks[0][key]);
+//       console.log(ingredientString);
+//     }
+// })
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
+//$("#happy").on("click",getHappy);
 
 // navigate from landing page to age verification page
 
 //on click on play button, this function is responsible for updating the playlist song, will need a counter incrementing every second until 30, when this happens change the src attr in the audio tag and replace it with the next song.
-function playlist(){
-  console.log("Playlist was called!");
-  $("#music-player-source").attr("src","https://cdns-preview-9.dzcdn.net/stream/c-9571d1a0be0db0b03e001cbdaffdc458-7.mp3");
-    seconds += 1;
-    if(seconds==30){
-     // $("#music-player-source").attr("src","https://deezerdevs-deezer.p.rapidapi.com/search?q=rick+ross");
+// function playlist(){
+//   console.log("Playlist was called!");
+//   $("#music-player-source").attr("src","https://cdns-preview-9.dzcdn.net/stream/c-9571d1a0be0db0b03e001cbdaffdc458-7.mp3");
+//     seconds += 1;
+//     if(seconds==30){
+//      // $("#music-player-source").attr("src","https://deezerdevs-deezer.p.rapidapi.com/search?q=rick+ross");
 
-    }
-}
-playlist();
+//     }
+// }
+// playlist();
 //var cancel = setInterval(playlist, 1000);
 
 //this function is responsible for displaying all the results
-function displayItems(){
-  
-}
+// function displayDrinks(){
+
+// }
 
 //-------------------------------------------------
 function toAgeVerificationPage() {

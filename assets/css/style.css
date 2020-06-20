@@ -222,11 +222,31 @@ img {
   margin: -2.8vw -5vw;
 }
 
+.good-half {
+  position: fixed;
+  margin: -2vw 38vw;
+  font-size: 3vw;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.spirits-half {
+  position: fixed;
+  color: white;
+  margin: -2.4vw 0vw 0vw;
+  font-size: 3.5vw;
+  font-family: "Vast Shadow", cursive;
+}
+
 .header {
   z-index: 1 !important;
   background-color: black;
   color: white;
-  padding: 3.5vw;
+  padding: 4.5vw 0vw .5vw;
+}
+
+.header-questions {
+  padding: 4.5vw 0vw 2.5vw;
 }
 
 .spirits {
@@ -240,7 +260,7 @@ img {
 .custom-row-card {
   width: 30vw;
   padding: 0vw;
-  margin: 4vw 1.6vw 0vw;
+  margin: 5vw 1.6vw 0vw;
   box-shadow: 20px 20px 15px #000;
   transition: transform 0.2s;
 }
@@ -286,7 +306,7 @@ img {
   height: 5vw;
   position: absolute;
   z-index: 1;
-  top: 6vw;
+  top: 8vw;
   border-radius: 5px;
   right: 26vw;
   box-shadow: 5px 5px 7px #000;
@@ -374,17 +394,6 @@ img {
   width: 50vw;
   position: fixed;
   right: 0vw;
-}
-
-.good-half {
-  position: fixed;
-  margin: -2vw -5vw;
-}
-
-.spirits-half {
-  position: fixed;
-  color: white;
-  margin: -2.5vw 1vw;
 }
 
 /* media queries =============================== */

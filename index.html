@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta keywords="Good Spirits"/>  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good Spirits</title>
@@ -17,22 +16,30 @@
       href="https://fonts.googleapis.com/css2?family=Flavors&family=Herr+Von+Muellerhoff&family=Homemade+Apple&family=Julius+Sans+One&family=Lexend+Tera&family=Mrs+Saint+Delafield&family=Stardos+Stencil:wght@700&family=Vast+Shadow&display=swap"
       rel="stylesheet"
     />
+    <!-- relative style sheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <!-- javascript sheet -->
     <script src="./assets/javascript/script.js"></script>
   </head>
 
   <body>
     <!-- landing page -->
     <div id="landing-page">
-      <div class="col-xs-6 fluid-half" id="page-left">
+      <div class="col-xs-6 fluid-half background-left" id="landing-page-left">
         <div class="example col-xs-6 pull-right">
-          <h1 class="text-right" id="header-text-left">Good</h1>
-          <h2 class="text-right" id="landing-text-left">
+          <h1
+            class="text-right header-text header-text-left"
+            id="landing-header-text-left"
+          >
+            Good
+          </h1>
+          <h2 class="text-right custom-text-left" id="landing-text-left">
             Music<br />and<br />Booze
           </h2>
         </div>
@@ -40,15 +47,20 @@
       <button
         type="button"
         class="btn btn-secondary forward-button"
-        id="start-button"
+        id="landing-start-button"
         onclick="toAgeVerificationPage()"
       >
         START
       </button>
-      <div class="col-xs-6 fluid-half" id="page-right">
+      <div class="col-xs-6 fluid-half background-right" id="landing-page-right">
         <div class="example col-xs-6 pull-left">
-          <h1 class="text-left" id="header-text-right">Spirits</h1>
-          <h2 class="text-left" id="landing-text-right">
+          <h1
+            class="text-left header-text header-text-right"
+            id="landing-header-text-right"
+          >
+            Spirits
+          </h1>
+          <h2 class="text-left custom-text-right" id="landing-text-right">
             to<br />Improve<br />Your<br />Mood
           </h2>
         </div>
@@ -57,7 +69,7 @@
 
     <!--verification page-->
     <div id="age-verification-page">
-      <div class="col-xs-6 fluid-half" id="age-page-left">
+      <div class="col-xs-6 fluid-half background-left" id="age-page-left">
         <div class="example col-xs-6 pull-right">
           <div class="btn" id="age-modal-left">
             <div class="age-text">
@@ -76,13 +88,13 @@
       </div>
       <button
         type="button"
-        class="btn btn-secondary back-button"
+        class="btn btn-secondary back-button-black"
         id="back-button-avp"
         onclick="toLandingPage()"
       >
         BACK
       </button>
-      <div class="col-xs-6 fluid-half" id="age-page-right">
+      <div class="col-xs-6 fluid-half background-right" id="age-page-right">
         <div class="example col-xs-6 pull-left">
           <div class="btn" id="age-modal-right">
             <div class="age-text">
@@ -92,6 +104,7 @@
               type="button"
               class="btn btn-secondary yes-no-button"
               id="no-button"
+              onclick="toKidsPage()"
             >
               NO
             </button>
@@ -100,13 +113,51 @@
       </div>
     </div>
 
+    <!-- kids page -->
+    <div id="kids-page">
+      <div class="col-xs-6 fluid-half background-left" id="kids-page-left">
+        <div class="example col-xs-6 pull-right">
+          <h1
+            class="text-right header-text header-text-left"
+            id="kids-header-text-left"
+          >
+            Too
+          </h1>
+          <h2 class="text-right custom-text-left" id="kids-text-left">
+            So
+          </h2>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-secondary back-button-white"
+        id="back-button-kids"
+        onclick="toLandingPage()"
+      >
+        BACK
+      </button>
+      <div class="col-xs-6 fluid-half background-right" id="kids-page-right">
+        <div class="example col-xs-6 pull-left">
+          <h1
+            class="text-left header-text header-text-right"
+            id="kids-header-text-right"
+          >
+            Bad
+          </h1>
+          <h2 class="text-left custom-text-right" id="kids-text-right">
+            Sad...
+          </h2>
+        </div>
+      </div>
+    </div>
+
     <!-- mood page -->
-    <div id="mood-page">
+    <div class="single-background" id="mood-page">
       <div class="jumbotron header">
         <button
           type="button"
-          class="btn btn-secondary back-button-mood-music"
-          id="back-button-mood"
+          class="btn btn-secondary back-button-white"
+          id="mood-back-button"
           onclick="toLandingPage()"
         >
           BACK
@@ -122,44 +173,44 @@
           FORWARD
         </button>
       </div>
-      <div class="card" id="mood-question-div">
-        <div id="mood-question-text">
+      <div class="card question-div" id="mood-question-div">
+        <div class="question-text" id="mood-question-text">
           Select your preferred mood:
         </div>
       </div>
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4 top-row-card">
+          <div class="col-md-4 custom-row-card" id="happy">
             <img src="./assets/images/happy.jpg" />
           </div>
-          <div class="col-md-4 top-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 custom-row-card" id="zen">
+            <img src="./assets/images/Zen.jpg" />
           </div>
-          <div class="col-md-4 top-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 custom-row-card" id="horny">
+            <img src="./assets/images/Horny.jpg" />
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="sad">
+            <img src="./assets/images/Sad.jpg" />
           </div>
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="energized">
+            <img src="./assets/images/Energized.jpg" />
           </div>
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="calm">
+            <img src="./assets/images/Calm.jpg" />
           </div>
         </div>
       </div>
     </div>
 
     <!-- music page -->
-    <div id="music-page">
+    <div class="single-background" id="music-page">
       <div class="jumbotron header">
         <button
           type="button"
-          class="btn btn-secondary back-button-mood-music"
-          id="back-button-music"
+          class="btn btn-secondary back-button-white"
+          id="music-back-button"
           onclick="toLandingPage()"
         >
           BACK
@@ -169,50 +220,136 @@
         <button
           type="button"
           class="btn btn-secondary forward-button"
-          id="mood-forward-button"
-          onclick="toMusicPage()"
+          id="music-forward-button"
+          onclick="toBoozePage()"
         >
           FORWARD
         </button>
       </div>
-      <div class="card" id="music-question-div">
-        <div id="music-question-text">
+      <div class="card question-div" id="music-question-div">
+        <div class="question-text" id="music-question-text">
           Select your preferred music:
         </div>
       </div>
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4 top-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 custom-row-card" id="rock">
+            <img src="./assets/images/Rock.jpg" />
           </div>
-          <div class="col-md-4 top-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 custom-row-card" id="r&b">
+            <img src="./assets/images/R&BMusic.jpg" />
           </div>
-          <div class="col-md-4 top-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 custom-row-card" id="jazz">
+            <img src="./assets/images/Jazz.jpg" />
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="country">
+            <img src="./assets/images/Country.jpg" />
           </div>
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="indie">
+            <img src="./assets/images/IndieMusic.jpg" />
           </div>
-          <div class="col-md-4 card bottom-row-card">
-            <img src="./assets/images/happy.jpg" />
+          <div class="col-md-4 card custom-row-card" id="edm">
+            <img src="./assets/images/EDM.jpg" />
           </div>
         </div>
       </div>
     </div>
 
-    <!-- kid's page -->
-    <div id="kids-page">
+    <!-- booze page -->
+    <div class="single-background" id="booze-page">
+      <div class="jumbotron header">
+        <button
+          type="button"
+          class="btn btn-secondary back-button-white"
+          id="booze-back-button"
+          onclick="toLandingPage()"
+        >
+          BACK
+        </button>
+        <span class="good">Good</span>
+        <span class="spirits">Spirits</span>
+        <button
+          type="button"
+          class="btn btn-secondary forward-button"
+          id="booze-forward-button"
+          onclick="toResultsPage()"
+        >
+          FORWARD
+        </button>
+      </div>
+      <div class="card question-div" id="booze-question-div">
+        <div class="question-text" id="booze-question-text">
+          Select your choice of liquor:
+        </div>
+      </div>
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4 custom-row-card">
+            <img src="./assets/images/Brandy.jpg" />
+          </div>
+          <div class="col-md-4 custom-row-card">
+            <img src="./assets/images/Tequila.jpg" />
+          </div>
+          <div class="col-md-4 custom-row-card">
+            <img src="./assets/images/Rum.jpg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 card custom-row-card">
+            <img src="./assets/images/Vodka.jpg" />
+          </div>
+          <div class="col-md-4 card custom-row-card">
+            <img src="./assets/images/Whiskey.jpg" />
+          </div>
+          <div class="col-md-4 card custom-row-card">
+            <img src="./assets/images/Gin.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- results page -->
+    <div id="results-page">
+      <div class="col-xs-6 fluid-half background-left" id="results-page-left">
+        <div class="example col-xs-6 pull-right">
+          <h1
+            class="text-right header-text header-text-left"
+            id="results-header-text-left"
+          >
+            Listen
+          </h1>
+          <h2 id="results-song-title"></h2>
+          <audio controls preload id="music-player">
+            <source
+              src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-secondary back-button-white"
+        id="back-button-results"
+        onclick="toLandingPage()"
+      >
+        BACK
+      </button>
+      <div class="col-xs-6 fluid-half background-right" id="results-page-right">
+        <div class="example col-xs-6 pull-left">
+          <h1
+            class="text-left header-text header-text-right"
+            id="results-header-text-right"
+          >
+            Drink
+          </h1>
+          <div id="results-drink-div">
+            <div id="drink-name"></div>
+            <div id="drink-image"></div>
+            <div id="drink-ingredients"></div>
+          </div>
         </div>
       </div>
     </div>

@@ -77,11 +77,17 @@ function toLandingPage() {
 function toMoodPage() {
   $("#age-verification-page").hide();
   $("#mood-page").show();
+
+
+
 }
 // this navigates forward to music page
 function toMusicPage() {
   $("#mood-page").hide();
   $("#music-page").show();
+
+
+  
 }
 
 // if user is under 21, this navigates to a kids friendly page

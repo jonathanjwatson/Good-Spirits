@@ -21,7 +21,7 @@ $(document).ready(function () {
       var key = "strIngredient" + i;
       if (response.drinks[0][key] !== null) {
         ingredientString.push(response.drinks[0][key]);
-        //ingredientString = ingredientString + " " + response.drinks[0][key];
+      //ingredientString = ingredientString + " " + response.drinks[0][key];
         // availLiquor[i].ingredients.push(response.drinks[0][key]);
         // console.log(availLiquor[i].ingredients);
         //$("#ingredients-here").append(response.drinks[0][key]);
@@ -32,6 +32,7 @@ $(document).ready(function () {
     //$("#drinks-here").append(response.drinks[0].strDrink);
   });
 
+  
   var search = "eminem";
   var settings = {
     async: true,
@@ -43,14 +44,13 @@ $(document).ready(function () {
       "x-rapidapi-key": "c44498c14bmsh109c8caa20abc0ep12e719jsnc8f75e4181e0",
     },
   };
-  //in this anonymous function I will pass in the name of the song and save all data to be displayed.
+//in this anonymous function I will pass in the name of the song and save all data to be displayed.
   $.ajax(settings).done(function (response) {
     console.log(response);
     console.log(response.data[0].preview);
 
     //  $("#info-here").append(response.hosts.images);
   });
-
 });
 
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!

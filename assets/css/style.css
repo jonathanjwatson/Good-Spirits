@@ -1,3 +1,7 @@
+body {
+  background-color: #000;
+}
+
 /* page ids ========================================= */
 #landing-page {
   display: block;
@@ -238,7 +242,7 @@ img {
   padding: 0vw;
   margin: 4vw 1.6vw 0vw;
   box-shadow: 20px 20px 15px #000;
-  transition: transform .2s; 
+  transition: transform 0.2s;
 }
 
 .custom-row-card:hover {
@@ -256,7 +260,7 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw -.4vw;
+  margin: 15vw -0.4vw;
   padding: 3vw;
 }
 
@@ -290,7 +294,7 @@ img {
 
 .question-text {
   z-index: 2;
-  -webkit-text-stroke: .2px black;
+  -webkit-text-stroke: 0.2px black;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
   font-family: "Homemade Apple", cursive;
@@ -337,7 +341,7 @@ img {
   color: #fff;
   text-decoration: none;
   border: 3px solid #fff;
-  text-shadow: 2px 4px 3px rgba(255,255,255,0.3);    
+  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
   box-shadow: 1px 1px 2px #333;
 }
 
@@ -357,6 +361,30 @@ img {
 #yes-button:hover {
   outline: 5px auto white;
   text-shadow: 1px 1px 0 #333;
+}
+
+.results-header-left {
+  background-color: black;
+  width: 50vw;
+  position: fixed;
+  left: 0vw;
+}
+.results-header-right {
+  background-color: black;
+  width: 50vw;
+  position: fixed;
+  right: 0vw;
+}
+
+.good-half {
+  position: fixed;
+  margin: -2vw -5vw;
+}
+
+.spirits-half {
+  position: fixed;
+  color: white;
+  margin: -2.5vw 1vw;
 }
 
 /* media queries =============================== */
@@ -383,10 +411,10 @@ img {
     margin: 3.9vw 1vw;
   }
   .back-button-white {
-    margin: -.5vw;
+    margin: -0.5vw;
   }
   .forward-button {
-    margin: -.5vw;
+    margin: -0.5vw;
   }
   .question-div {
     top: 8.5vw;

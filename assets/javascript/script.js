@@ -63,7 +63,9 @@ $(document).ready(function () {
     // in this function I will pass in the name of drink and save all data needed to be displayed.
     $("#drink-name").append(response.drinks[0].strDrink);
 
-    $("#drink-image").append(response.drinks[0].strDrinkThumb);
+    // appending the image of the drink to the dom
+    var drinkImage = response.drinks[0].strDrinkThumb;
+    $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
 
     for (var i = 1; i <= 15; i++) {
       var key = "strIngredient" + i;
@@ -83,14 +85,63 @@ $(document).ready(function () {
 
     $("#drink-instructions").append(response.drinks[0].strInstructions);
     console.log(response.drinks[0].strInstructions);
-  })
-});
+  });
 
+  // ELIZABETH'S CODE -----------------------------------
+  var moodMusicArray = [];
+  var moodBoozeArray = [];
+  var moodEl;
+  var musicEl;
+  var boozeEl;
+
+  // event listener to get selected mood
+  $(".imagesMood").click(function() {
+    var mood = $(this)[0].offsetParent.id;
+    moodEl = mood;
+    console.log(moodEl);
+    toMusicPage();
+  })
+
+  // event listener to get selected music genre
+  $(".imagesMusic").click(function() {
+    var music = $(this)[0].offsetParent.id;
+    musicEl = music;
+    console.log(musicEl);
+    chooseUserSong();
+    toBoozePage();
+  })
+
+  // event listener to get selected alcohol choice
+  $(".imagesBooze").click(function() {
+    var booze = $(this)[0].offsetParent.id;
+    boozeEl = booze;
+    console.log(boozeEl);
+    chooseUserDrink();
+    toResultsPage();
+  })
+
+  // this function is called after the user selects music
+  // this function returns an array to determine the song
+  function chooseUserSong() {
+    moodMusicArray = [];
+    moodMusicArray.push(moodEl, musicEl);
+    console.log(moodMusicArray);
+  }
+  
+  // this function is called after the user selects alcohol
+  // this function returns an array to determine the drink
+  function chooseUserDrink() {
+    moodBoozeArray = [];
+    moodBoozeArray.push(moodEl, boozeEl);
+    console.log(moodBoozeArray);
+  }
+
+}); // end of document.ready
+
+//-------------------------------------------------
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
 // navigate from landing page to age verification page
-
-//-------------------------------------------------
 function toAgeVerificationPage() {
   $("#landing-page").hide();
   $("#age-verification-page").show();
@@ -106,14 +157,18 @@ function toLandingPage() {
   $("#results-page").hide();
   $("#landing-page").show();
 }
+
 // if user is 21, this navigates forward to mood page
 function toMoodPage() {
   $("#age-verification-page").hide();
+  $("#music-page").hide();
   $("#mood-page").show();
 }
+
 // this navigates forward to music page
 function toMusicPage() {
   $("#mood-page").hide();
+  $("#booze-page").hide();
   $("#music-page").show();
 }
 
@@ -132,5 +187,3 @@ function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();
 }
-
-

@@ -330,6 +330,13 @@ img {
   font-size: 2.4vw;
 }
 
+#drink-name {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 2vw 0vw;
+  width: 100vw;
+}
 /* music player and cocktail display on results page ==================== */
 #music-display-div {
   width: 75%;
@@ -400,7 +407,7 @@ img {
 }
 
 .results-header-text {
-  margin: 5vw 0vw;
+  margin: 5vw 0vw 0vw;
 }
 
 /* media queries =============================== */

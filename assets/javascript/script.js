@@ -179,19 +179,13 @@ function toMoodPage() {
   $("#age-verification-page").hide();
   $("#music-page").hide();
   $("#mood-page").show();
-
-
-
 }
 
 // this navigates forward to music page
 function toMusicPage() {
   $("#mood-page").hide();
   $("#booze-page").hide();
-  $("#music-page").show();
-
-
-  
+  $("#music-page").show(); 
 }
 
 // if user is under 21, this navigates to a kids friendly page
@@ -208,9 +202,7 @@ function toBoozePage() {
 function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();
-
 }
-=======
 
 
 //drink variables from Joel

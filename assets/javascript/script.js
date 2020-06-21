@@ -83,8 +83,19 @@ $(document).ready(function () {
 
     $("#drink-instructions").append(response.drinks[0].strInstructions);
     console.log(response.drinks[0].strInstructions);
+  });
+
+  // Elizabeth's code:
+  var moodMusicArray = [];
+  var moodEl;
+
+  // event listener to get selected mood
+  $(".imagesMood").click(function() {
+    var mood = $(this)[0].offsetParent.id;
+    moodEl = mood
   })
-});
+
+}); // end of document.ready
 
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
@@ -132,5 +143,3 @@ function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();
 }
-
-

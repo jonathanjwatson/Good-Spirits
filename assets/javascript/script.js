@@ -101,6 +101,7 @@ $(document).ready(function () {
     console.log(moodEl);
     toMusicPage();
   })
+
   // event listener to get selected music genre
   $(".imagesMusic").click(function() {
     var music = $(this)[0].offsetParent.id;
@@ -109,6 +110,7 @@ $(document).ready(function () {
     chooseUserSong();
     toBoozePage();
   })
+
   // event listener to get selected alcohol choice
   $(".imagesBooze").click(function() {
     var booze = $(this)[0].offsetParent.id;
@@ -117,6 +119,7 @@ $(document).ready(function () {
     chooseUserDrink();
     toResultsPage();
   })
+
   // this function is called after the user selects music
   // this function returns an array to determine the song
   function chooseUserSong() {
@@ -124,6 +127,7 @@ $(document).ready(function () {
     moodMusicArray.push(moodEl, musicEl);
     console.log(moodMusicArray);
   }
+  
   // this function is called after the user selects alcohol
   // this function returns an array to determine the drink
   function chooseUserDrink() {

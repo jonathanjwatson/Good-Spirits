@@ -69,6 +69,24 @@ img {
   height: 100vw;
 }
 
+.choice-text {
+  font-family: "Julius Sans One", sans-serif;
+  position: absolute;
+}
+
+.choice-text-mood {
+  color: white;
+  font-size: 4vw;
+  margin: 1vw 2vw;
+}
+
+.choice-text-music {
+  color: black;
+  font-size: 3vw;
+  margin: 1vw 19vw;
+  text-align: right;
+}
+
 .custom-row-card {
   width: 30vw;
   padding: 0vw;
@@ -291,6 +309,10 @@ img {
   width: 75%;
   position: absolute;
   right: -4vw;
+}
+
+#country-text {
+  margin: 1vw 14.2vw;
 }
 
 #drink-name {

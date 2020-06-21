@@ -74,16 +74,25 @@ img {
   position: absolute;
 }
 
+.choice-text-booze {
+  color: white;
+  font-size: 4vw;
+  top: 2vw;
+  left: 2vw;
+}
+
 .choice-text-mood {
   color: white;
   font-size: 4vw;
-  margin: 1vw 2vw;
+  top: 1vw; 
+  left: 2vw;
 }
 
 .choice-text-music {
   color: black;
   font-size: 3vw;
-  margin: 1vw 19vw;
+  top: 1vw;
+  left: 19vw;
   text-align: right;
   font-weight: bolder;
 }
@@ -313,7 +322,7 @@ img {
 }
 
 #country-text {
-  margin: 1vw 14.2vw;
+  left: 14.5vw;
 }
 
 #drink-name {

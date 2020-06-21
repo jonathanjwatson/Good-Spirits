@@ -63,7 +63,9 @@ $(document).ready(function () {
     // in this function I will pass in the name of drink and save all data needed to be displayed.
     $("#drink-name").append(response.drinks[0].strDrink);
 
-    $("#drink-image").append(response.drinks[0].strDrinkThumb);
+    // appending the image of the drink to the dom
+    var drinkImage = response.drinks[0].strDrinkThumb;
+    $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
 
     for (var i = 1; i <= 15; i++) {
       var key = "strIngredient" + i;

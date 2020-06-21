@@ -132,11 +132,10 @@ $(document).ready(function () {
 
 }); // end of document.ready
 
+//-------------------------------------------------
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
 // navigate from landing page to age verification page
-
-//-------------------------------------------------
 function toAgeVerificationPage() {
   $("#landing-page").hide();
   $("#age-verification-page").show();
@@ -152,12 +151,14 @@ function toLandingPage() {
   $("#results-page").hide();
   $("#landing-page").show();
 }
+
 // if user is 21, this navigates forward to mood page
 function toMoodPage() {
   $("#age-verification-page").hide();
   $("#music-page").hide();
   $("#mood-page").show();
 }
+
 // this navigates forward to music page
 function toMusicPage() {
   $("#mood-page").hide();

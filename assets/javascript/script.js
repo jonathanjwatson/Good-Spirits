@@ -85,7 +85,7 @@ $(document).ready(function () {
     console.log(response.drinks[0].strInstructions);
   });
 
-  // Elizabeth's code:
+  // ELIZABETH'S CODE -----------------------------------
   var moodMusicArray = [];
   var moodBoozeArray = [];
   var moodEl;
@@ -116,12 +116,14 @@ $(document).ready(function () {
     toResultsPage();
   })
   // this function is called after the user selects music
+  // this function returns an array to determine the song
   function chooseUserSong() {
     moodMusicArray = [];
     moodMusicArray.push(moodEl, musicEl);
     console.log(moodMusicArray);
   }
-
+  // this function is called after the user selects alcohol
+  // this function returns an array to determine the drink
   function chooseUserDrink() {
     moodBoozeArray = [];
     moodBoozeArray.push(moodEl, boozeEl);
@@ -153,11 +155,13 @@ function toLandingPage() {
 // if user is 21, this navigates forward to mood page
 function toMoodPage() {
   $("#age-verification-page").hide();
+  $("#music-page").hide();
   $("#mood-page").show();
 }
 // this navigates forward to music page
 function toMusicPage() {
   $("#mood-page").hide();
+  $("#booze-page").hide();
   $("#music-page").show();
 }
 

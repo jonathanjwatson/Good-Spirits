@@ -46,33 +46,7 @@ var thistyCountry = ["https://cdns-preview-4.dzcdn.net/stream/c-4411bb93125a133e
 
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
-  var queryInitial =
-    "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-  var searchDrink = "Mojito";
-  var queryURL = queryInitial + searchDrink;
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-    // in this function I will pass in the name of drink and save all data needed to be displayed.
-    //$("#drinks-here").append(response.drinks[0].strDrink);
-    // $("#instructions-here").append(response.drinks[0].strInstructions);
-
-    for (var i = 1; i <= 15; i++) {
-      var key = "strIngredient" + i;
-      if (response.drinks[0][key] !== null) {
-        ingredientString.push(response.drinks[0][key]);
-        //ingredientString = ingredientString + " " + response.drinks[0][key];
-        // availLiquor[i].ingredients.push(response.drinks[0][key]);
-        // console.log(availLiquor[i].ingredients);
-        //$("#ingredients-here").append(response.drinks[0][key]);
-      }
-      console.log(response.drinks[0][key]);
-      console.log(ingredientString);
-    }
-    //$("#drinks-here").append(response.drinks[0].strDrink);
-  });
+  
 
   var search = "eminem";
   var settings = {
@@ -234,8 +208,49 @@ function toBoozePage() {
 function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();
-<<<<<<< HEAD
+
 }
 =======
-}
->>>>>>> 43276247da550ca88171ed4a21daa724ba457199
+
+
+//drink variables from Joel
+
+// var drinks = [
+//   "Victory Collins", // happy vodka
+//   "Day At The Beach",// happy rum
+//   "Orange Oasis", //happy Gin
+//   "Alleghany",//happy whiskey
+//   "Tequilla Sunrise",// happy tequilla
+//   "Brandy Cobbler",//happy brandy
+//   "Bruised Heart",//sad vadka
+//   "Adios Amigos Cocktail",//sad rum
+//   "Corpse Reviver",//sad gin
+//   "Bourbon Sour",//sad whiskey
+//   "3-Mile Long Island Iced Tea",//sad tequilla
+//   "Brandy Sour",//sad brandy
+//   "Popped Cherry",//thirsty vodka
+//   "Bahama Mama",// thirsty rum
+//   "69 Special",//thirsty gin
+//   "Midnight Cowboy",//thirsty wisky
+//   "Paloma",//thirsty tequilla
+//   "Between The Sheets",//thirsty brandy
+//   "1-900-FUK-MEUP",//energized vodka
+//   "Adam Bomb",//energized rum
+//   "Salty Dog",//energized gin
+//   "Fahrenheit 5000",//energized whiskey
+//   "Brave Bull Shooter",//nergized tequilla
+//   "English Highball",//energized brandy
+//   "Dirty Martini",//calm vodka
+//   "Rum Punch",//calm rum
+//   "Gin And Tonic",//calm gin
+//   "Sazerac",//calm whiskey
+//   "Tequilla Slammer",//calm tequilla
+//   "Boston Sidecar",//calm brandy
+//   "Absolut Stress #2",//zen vodka
+//   "Zombie",//zen rum
+//   "Jitter Bug",//zen gin
+//   "Artillery Punch",//zen whiskey
+//   "Downshift",//zen tequilla
+//   "Artillery Punch",//zen brandy
+// ];
+

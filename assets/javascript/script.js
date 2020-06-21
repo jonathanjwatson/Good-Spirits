@@ -2,9 +2,11 @@ var songs = [];
 var availLiquor = [];
 var ingredientString = [];
 var seconds = 0;
+var drink = "Mojito";
 //look into switch cases to 
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
+  getDrinkData(drink);
   var queryInitial =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
   var searchDrink = "Mojito";
@@ -50,46 +52,18 @@ $(document).ready(function () {
     console.log(response.data[0].preview);
     //  $("#info-here").append(response.hosts.images);
   });
-});
-//updates song taking in mp3 file
-function makeMusic(mp3){
-  $("#music-player")[0].src = mp3;
-  
-}
 
-// function getDrinkData(drinkTarget){
-//   var queryInitial =
-//     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-//   var searchDrink = drinkTarget;
-//   var queryURL = queryInitial + searchDrink;
-//   $.ajax({
-//     url: queryURL,
-//     method: "GET",
-//   }).then(function (response) {
-//     console.log(response);
-//     // in this function I will pass in the name of drink and save all data needed to be displayed.
-//     //$("#drinks-here").append(response.drinks[0].strDrink);
-//     // $("#instructions-here").append(response.drinks[0].strInstructions);
-//     drinkPics.push(response.drinks[0]["strDrinkThumb"]);
-//     drinkInstr.push(response.drink[0]["strInstructions"]);
-//     for (var i = 1; i <= 15; i++) {
-//       var key = "strIngredient" + i;
-//       if (response.drinks[0][key] !== null) {
-//         ingredientString.push(response.drinks[0][key]);
-//       //  drinkPics.push(response.drinks[0]["strDrinkThumb"]);
-//         // console.log("Pic: " + response.drinks[0]["strDrinkThumb"]);
-//          console.log("drinkPics " + drinkPics);
-//       //ingredientString = ingredientString + " " + response.drinks[0][key];
-//         // availLiquor[i].ingredients.push(response.drinks[0][key]);
-//         // console.log(availLiquor[i].ingredients);
-//         //$("#ingredients-here").append(response.drinks[0][key]);
-//       }
-//       console.log(response.drinks[0][key]);
-//       console.log(ingredientString);
-//     }
-// })
-// onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
-//$("#happy").on("click",getHappy);
+  var queryInitial =
+    "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+  var searchDrink = "Artillery punch";
+  var queryURL = queryInitial + searchDrink;
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+    // in this function I will pass in the name of drink and save all data needed to be displayed.
+    $("#drink-name").append(response.drinks[0].strDrink);
 
     // appending the image of the drink to the dom
     var drinkImage = response.drinks[0].strDrinkThumb;
@@ -114,6 +88,10 @@ function makeMusic(mp3){
     $("#drink-instructions").append(response.drinks[0].strInstructions);
     console.log(response.drinks[0].strInstructions);
   });
+
+function getDrinkData(drinkName){
+  
+}
 
   // ELIZABETH'S CODE -----------------------------------
   var moodMusicArray = [];

@@ -87,8 +87,10 @@ $(document).ready(function () {
 
   // Elizabeth's code:
   var moodMusicArray = [];
+  var moodBoozeArray = [];
   var moodEl;
   var musicEl;
+  var boozeEl;
 
   // event listener to get selected mood
   $(".imagesMood").click(function() {
@@ -103,13 +105,27 @@ $(document).ready(function () {
     musicEl = music;
     console.log(musicEl);
     chooseUserSong();
+    toBoozePage();
+  })
+  // event listener to get selected alcohol choice
+  $(".imagesBooze").click(function() {
+    var booze = $(this)[0].offsetParent.id;
+    boozeEl = booze;
+    console.log(boozeEl);
+    chooseUserDrink();
+    toResultsPage();
   })
   // this function is called after the user selects music
   function chooseUserSong() {
     moodMusicArray = [];
-    moodMusicArray.push(moodEl);
-    moodMusicArray.push(musicEl);
+    moodMusicArray.push(moodEl, musicEl);
     console.log(moodMusicArray);
+  }
+
+  function chooseUserDrink() {
+    moodBoozeArray = [];
+    moodBoozeArray.push(moodEl, boozeEl);
+    console.log(moodBoozeArray);
   }
 
 }); // end of document.ready

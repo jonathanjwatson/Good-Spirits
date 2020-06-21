@@ -88,12 +88,29 @@ $(document).ready(function () {
   // Elizabeth's code:
   var moodMusicArray = [];
   var moodEl;
+  var musicEl;
 
   // event listener to get selected mood
   $(".imagesMood").click(function() {
     var mood = $(this)[0].offsetParent.id;
-    moodEl = mood
+    moodEl = mood;
+    console.log(moodEl);
+    toMusicPage();
   })
+  // event listener to get selected music genre
+  $(".imagesMusic").click(function() {
+    var music = $(this)[0].offsetParent.id;
+    musicEl = music;
+    console.log(musicEl);
+    chooseUserSong();
+  })
+  // this function is called after the user selects music
+  function chooseUserSong() {
+    moodMusicArray = [];
+    moodMusicArray.push(moodEl);
+    moodMusicArray.push(musicEl);
+    console.log(moodMusicArray);
+  }
 
 }); // end of document.ready
 

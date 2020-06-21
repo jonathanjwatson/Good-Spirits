@@ -13,8 +13,11 @@ $(document).ready(function () {
     console.log(response);
     // in this function I will pass in the name of drink and save all data needed to be displayed.
     $("#drink-name").append(response.drinks[0].strDrink);
-  
-    $("#drink-image").append(response.drinks[0].strDrinkThumb);
+
+    var drinkImage = response.drinks[0].strDrinkThumb;
+    $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
+    
+    // $("#drink-image").append(response.drinks[0].strDrinkThumb);
     
   
     for (var i = 1; i <= 15; i++) {
@@ -112,3 +115,41 @@ $(document).ready(function () {
     $("#results-page").show();
   }
   
+  var drinks = [
+    "Victory Collins", // happy vodka
+    "Day At The Beach",// happy rum
+    "Orange Oasis", //happy Gin
+    "Alleghany",//happy whiskey
+    "Tequilla Sunrise",// happy tequilla
+    "Brandy Cobbler",//happy brandy
+    "Bruised Heart",//sad vadka
+    "Adios Amigos Cocktail",//sad rum
+    "Corpse Reviver",//sad gin
+    "Bourbon Sour",//sad whiskey
+    "3-Mile Long Island Iced Tea",//sad tequilla
+    "Brandy Sour",//sad brandy
+    "Popped Cherry",//thirsty vodka
+    "Bahama Mama",// thirsty rum
+    "69 Special",//thirsty gin
+    "Midnight Cowboy",//thirsty wisky
+    "Paloma",//thirsty tequilla
+    "Between The Sheets",//thirsty brandy
+    "1-900-FUK-MEUP",//energized vodka
+    "Adam Bomb",//energized rum
+    "Salty Dog",//energized gin
+    "Fahrenheit 5000",//energized whiskey
+    "Brave Bull Shooter",//nergized tequilla
+    "English Highball",//energized brandy
+    "Dirty Martini",//calm vodka
+    "Rum Punch",//calm rum
+    "Gin And Tonic",//calm gin
+    "Sazerac",//calm whiskey
+    "Tequilla Slammer",//calm tequilla
+    "Boston Sidecar",//calm brandy
+    "Absolut Stress #2",//zen vodka
+    "Zombie",//zen rum
+    "Jitter Bug",//zen gin
+    "Artillery Punch",//zen whiskey
+    "Downshift",//zen tequilla
+    "Artillery Punch",//zen brandy
+  ];

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+#age-verification-page {
+=======
 /* page elements ============================================ */
 body {
   background-color: #000;
@@ -239,33 +243,44 @@ img {
   -o-background-size: cover;
   background-size: cover;
   min-height: 100vw;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
   display: none;
 }
 
-.spirits {
-  font-family: "Vast Shadow", cursive;
-  font-size: 3.5vw;
-  margin: -3.4vw 0vw 0vw;
-  position: absolute;
-  left: 48vw;
+#kids-page {
+  display: none;
 }
 
+<<<<<<< HEAD
+.single-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vw;
+  display: none;
+}
+
+#mood-page {
+  background: url(../images/BlackandRed.jpg) no-repeat center center fixed;
+=======
 .spirits-half {
   position: fixed;
   color: white;
   margin: -2.4vw 0vw 0vw;
   font-size: 3.5vw;
   font-family: "Vast Shadow", cursive;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 }
 
-.yes-no-button {
-  background: none;
-  font-family: "Vast Shadow", cursive;
-  width: 10vw;
-  height: 5vw;
-  margin-bottom: 1vw;
+#music-page {
+  background: url(../images/BlackandGreen.jpg) no-repeat center center fixed;
 }
 
+<<<<<<< HEAD
+#booze-page {
+  background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
+=======
 /* ids ====================================================== */
 #age-modal-left {
   position: absolute;
@@ -280,21 +295,48 @@ img {
   font-size: 3vw;
   margin: 15vw -0.4vw;
   padding: 3vw;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 }
 
-#age-modal-right {
-  position: absolute;
-  z-index: 1;
-  border: 3px solid white;
-  border-left: none;
+#results-page {
+  display: none;
+}
+
+<<<<<<< HEAD
+/* backgrounds, page left and right ================ */
+.background-left {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+}
+
+.background-right {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vw;
+=======
+#age-page-left {
+  background: url(../images/White.jpg) no-repeat center center fixed;
+  color: black;
+}
+
+#age-page-right {
+  background: url(../images/Black.jpg) no-repeat center center fixed;
   color: white;
-  background: none;
-  letter-spacing: 1px;
-  text-align: center;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 3vw;
-  margin: 15vw -2vw;
-  padding: 3vw;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
+}
+
+#landing-page-left {
+  background: url(../images/Yellow.jpg) no-repeat center center fixed;
+}
+
+<<<<<<< HEAD
+#landing-page-right {
+  background: url(../images/Blue.jpg) no-repeat center center fixed;
 }
 
 #age-page-left {
@@ -307,10 +349,63 @@ img {
   color: white;
 }
 
-#age-verification-page {
-  display: none;
+#kids-page-left {
+  background: url(../images/Green.jpg) no-repeat center center fixed;
 }
 
+#kids-page-right {
+  background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+#results-page-left {
+  background: url(../images/Red.jpg) no-repeat center center fixed;
+}
+
+#results-page-right {
+  background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+/* header text =================================== */
+.header-text {
+  font-size: 7.5vw;
+  border-bottom: 5px solid black;
+}
+
+.header-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  margin: 11.7vw 0vw 0vw;
+  position: absolute;
+  right: 1.4vw;
+  padding-bottom: 1.3vw;
+  text-shadow: 6px 5px 10px #000;
+}
+
+.header-text-right {
+  font-family: "Vast Shadow", cursive;
+  margin: 11.5vw 0vw 0vw;
+  width: 171%;
+  padding-bottom: 1.4vw;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* text left and right ============================ */
+.custom-text-left {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4vw;
+  margin: 24.8vw 0vw;
+  position: absolute;
+  right: 2vw;
+  text-shadow: 1px 1px 5px #333;
+}
+
+.custom-text-right {
+  font-family: "Vast Shadow", cursive;
+  margin: 2.9vw 1vw;
+}
+
+#landing-text-right {
+  font-size: 3vw;
+=======
 #booze-page {
   background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
 }
@@ -351,12 +446,46 @@ img {
 
 #kids-text-right {
   font-size: 4.2vw;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 }
 
-#landing-page {
-  display: block;
+#kids-text-right {
+  font-size: 4.2vw;
 }
 
+<<<<<<< HEAD
+/* back buttons ================================== */
+.back-button-black {
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  right: 85vw;
+  border: 3px solid #000;
+  color: black;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #333;
+  box-shadow: 1px 1px 2px #333;
+}
+
+.back-button-black:hover {
+  outline: 5px auto white;
+}
+
+.back-button-white {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 85vw;
+  border: 3px solid white;
+  color: white;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-decoration: none;
+=======
 #landing-page-left {
   background: url(../images/Yellow.jpg) no-repeat center center fixed;
 }
@@ -368,10 +497,144 @@ img {
 #landing-start-button {
   color: black;
   border: 3px solid black;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
   text-shadow: 1px 1px 2px #333;
   box-shadow: 1px 1px 2px #333;
 }
 
+<<<<<<< HEAD
+.back-button-white:hover {
+  outline: 5px auto black;
+  color: white;
+}
+
+/* forward buttons ================================== */
+.forward-button {
+  position: absolute;
+  z-index: 1;
+  top: 2vw;
+  right: 5vw;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  width: 10vw;
+  text-shadow: 1px 1px 2px #333;
+  box-shadow: 1px 1px 2px #333;
+}
+
+.forward-button:hover {
+  outline: 5px auto black;
+  color: white;
+}
+
+#landing-start-button {
+  color: black;
+  border: 3px solid black;
+  text-shadow: 1px 1px 2px #333;
+  box-shadow: 1px 1px 2px #333;
+}
+
+img {
+  width: 100%;
+}
+
+.age-text {
+  padding-bottom: 2vw;
+  text-shadow: 1px 1px 3px #333;
+}
+
+.good {
+  font-family: "Julius Sans One", sans-serif;
+  position: absolute;
+  font-size: 3vw;
+  right: 59vw;
+  padding-bottom: 1.3vw;
+  margin: -2.8vw -5vw;
+}
+
+.header {
+  z-index: 1 !important;
+  background-color: black;
+  color: white;
+  padding: 3.5vw;
+}
+
+.spirits {
+  font-family: "Vast Shadow", cursive;
+  font-size: 3.5vw;
+  margin: -3.4vw 0vw 0vw;
+  position: absolute;
+  left: 48vw;
+}
+
+.custom-row-card {
+  width: 30vw;
+  padding: 0vw;
+  margin: 4vw 1.6vw 0vw;
+  box-shadow: 20px 20px 15px #000;
+  transition: transform .2s; 
+}
+
+.custom-row-card:hover {
+  transform: scale(1.05);
+}
+
+#age-modal-left {
+  position: absolute;
+  z-index: 1;
+  border: 3px solid #000;
+  border-right: none;
+  color: #000;
+  background: none;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3vw;
+  margin: 15vw 0vw;
+  padding: 3vw;
+}
+
+#age-modal-right {
+  position: absolute;
+  z-index: 1;
+  border: 3px solid white;
+  border-left: none;
+  color: white;
+  background: none;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3vw;
+  margin: 15vw -2vw;
+  padding: 3vw;
+}
+
+/* question text and div ============================= */
+.question-div {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 47%;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  top: 6vw;
+  border-radius: 5px;
+  right: 26vw;
+  box-shadow: 5px 5px 7px #000;
+}
+
+.question-text {
+  z-index: 2;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.5vw;
+  margin: 0.9vw 3.3vw;
+  color: white;
+}
+
+=======
 #landing-text-right {
   font-size: 3vw;
 }
@@ -398,21 +661,45 @@ img {
   left: -4.5vw;
 }
 
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 #music-question-text {
   font-size: 2.4vw;
 }
 
+<<<<<<< HEAD
+/* music player on results page ==================== */
+#music-player {
+  margin: 26vw -3vw;
+}
+
+/* yes and no buttons ============================= */
+.yes-no-button {
+  background: none;
+  font-family: "Vast Shadow", cursive;
+  width: 10vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+}
+
+=======
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 #no-button {
   color: #fff;
   text-decoration: none;
   border: 3px solid #fff;
+<<<<<<< HEAD
+  text-shadow: 2px 4px 3px rgba(255,255,255,0.3);    
+=======
   text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
   box-shadow: 1px 1px 2px #333;
 }
 
 #no-button:hover {
   outline: 5px auto black;
   text-shadow: 3px 3px 0 #333;
+<<<<<<< HEAD
+=======
 }
 
 #results-page {
@@ -425,6 +712,7 @@ img {
 
 #results-page-right {
   background: url(../images/Purple.jpg) no-repeat center center fixed;
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 }
 
 #yes-button {
@@ -438,6 +726,8 @@ img {
 #yes-button:hover {
   outline: 5px auto white;
   text-shadow: 1px 1px 0 #333;
+<<<<<<< HEAD
+=======
 }
 
 /* media queries =============================== */
@@ -633,4 +923,6 @@ img {
     top: 0vw;
     left: 39vw;
   }
+>>>>>>> 43276247da550ca88171ed4a21daa724ba457199
 }
+

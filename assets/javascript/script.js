@@ -229,9 +229,18 @@ $(document).ready(function () {
 function hardReset() {
   moodBoozeArray = [];
   moodMusicArray = [];
-  $("#results-drink-div").html("");
-  $("#results-music-display-div").empty();
-  toLandingPage();
+  $("#results-drink-div").children().each(function(index,child){
+    console.log(child);
+    $(child).html("");
+  });
+  console.log($("#results-music-display-div").children());
+  $("#results-music-display-div").children().each(function(index,child){
+    console.log(child);
+    $(child).html("");
+  });
+  console.log(moodBoozeArray);
+  console.log(moodMusicArray);
+  //toLandingPage();
 }
 //-------------------------------------------------
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
@@ -251,7 +260,7 @@ function toLandingPage() {
   $("#booze-page").hide();
   $("#results-page").hide();
   $("#landing-page").show();
-  //hardReset();
+  hardReset();
 }
 
 // if user is 21, this navigates forward to mood page

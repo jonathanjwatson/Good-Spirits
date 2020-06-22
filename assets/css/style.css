@@ -303,7 +303,6 @@ img {
 
 /* ids ====================================================== */
 #age-modal-left {
-  position: absolute;
   z-index: 1;
   border: 3px solid #000;
   border-right: none;
@@ -313,12 +312,11 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw -0.4vw;
+  margin: 55% -2%;
   padding: 3vw;
 }
 
 #age-modal-right {
-  position: absolute;
   z-index: 1;
   border: 3px solid white;
   border-left: none;
@@ -328,7 +326,7 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw -2vw;
+  margin: 55% -5%;
   padding: 3vw;
 }
 
@@ -424,6 +422,7 @@ img {
 
 #kids-header-text-right {
   width: 100%;
+  margin-bottom: 22%;
 }
 
 #kids-page {

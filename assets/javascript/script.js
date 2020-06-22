@@ -43,7 +43,7 @@ var boozeEl;
   // });
 
 var happyRock = [
-  "https://deezerdevs-deezer.p.rapidapi.com/search?q=elvis+presley",
+  "https://cdns-preview-8.dzcdn.net/stream/c-851362f70a24a4d6dd1f8d1da0ad6542-3.mp3",
 ];
 var happyRnb = [
   "https://cdns-preview-6.dzcdn.net/stream/c-658eddcaaa10d7dfb8ab483551575771-5.mp3",
@@ -143,16 +143,16 @@ var thirstyRock = [
 var thirstyRnd = [
   "https://cdns-preview-e.dzcdn.net/stream/c-ec646ba7d148fff0a503691dfaa3b577-5.mp3",
 ];
-var thistyJazz = [
+var thirstyJazz = [
   "https://cdns-preview-9.dzcdn.net/stream/c-940693c0a30e575d6d0e6466e1c80763-9.mp3",
 ];
-var thistyIndie = [
+var thirstyIndie = [
   "https://cdns-preview-1.dzcdn.net/stream/c-1222b91e6d1748ccfa3696cdc89ecb33-5.mp3",
 ];
 var thirstyEdm = [
   "https://cdns-preview-d.dzcdn.net/stream/c-d85850de8975c7904d52c41037c1268b-6.mp3",
 ];
-var thistyCountry = [
+var thirstyCountry = [
   "https://cdns-preview-4.dzcdn.net/stream/c-4411bb93125a133e3d9d23b6c34d831f-2.mp3",
 ];
 
@@ -315,6 +315,48 @@ var drinks = {
 
 var songz = {
   "thirsty|country": "My Little Girl",
+  "thirsty|rock": "It must have been love",
+  "thirsty|rnb" : "You like it",
+  "thirsty|edm" : "The One",
+  "thirsty|indie" : "No Control",
+  "thirsty|jazz": "Black Bird (remastered 2009)",
+
+  "zen|country": "What I Never Knew I Always Wanted",
+  "zen|rock": "Little Wing",
+  "zen|rnb" : "Never Personal",
+  "zen|edm" : "Dear Boy",
+  "zen|indie" : "Mad Sounds",
+  "zen|jazz": "Always Leaving Always Gone",
+
+  "happy|country": "My Little Girl",
+  "happy|rock": "God's Country",
+  "happy|rnb" : "You like it",
+  "happy|edm" : "The One",
+  "happy|indie" : "",
+  "happy|jazz": "Always Leaving Always gone",
+
+  "sad|country": "God's Country",
+  "sad|rock": "Black Bird (remastered 2009)",
+  "sad|rnb" : "Do Re Mi",
+  "sad|edm" : "My Little Girl",
+  "sad|indie" : "Mad Sounds",
+  "sad|jazz": "Black Bird (remastered 2009)",
+
+  "energized|country": "I Heard The Bells On Christmas Day",
+  "energized|rock": "Nadine",
+  "energized|rnb" : "We Own It (fast & furious)",
+  "energized|edm": "Detroit 3AM (Radio Edit)",
+  "energized|indie": "Wicked Campaign",
+  "energized|jazz": "When It's Sleepy Time Down South (Live)",
+
+  "calm|country": "What I Never Knew I Always Wanted",
+  "calm|rock": "Lttle Wing",
+  "calm|rnb": "Take A Bow",
+  "calm|edm": "Dear Boy",
+  "calm|indie":"Wicked Campaign",
+  "calm|jazz": "Black Bird (remastered 2009)",
+  
+
 }
 
 function getSongData(){

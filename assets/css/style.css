@@ -688,31 +688,21 @@ img {
     left: 39vw;
   } */
 /* #zen {
-  position: absolute;
-  top: 0vw;
-  left: 39vw;
-} */
+    position: absolute;
+    top: 0vw;
+    left: 39vw;
+  } */
 /* } */
 @media screen and (max-width: 576px) {
-  .back-button-white {
-    margin: 0% -6%;
-    font-size: 75%;
-  }
-  .choice-text-mood {
-    color: white;
-    font-size: 4vw;
-    top: 7vw;
-    left: 9vw;
-  }
   .good {
     font-size: 7vw;
   }
-  .question-div {
-    top: 7%;
-    left: 30%;
-  }
   .spirits {
     font-size: 7.5vw;
+  }
+  .back-button-white {
+    margin: 0% -6%;
+    font-size: 75%;
   }
   .yes-no-button {
     width: auto;
@@ -720,6 +710,16 @@ img {
   }
   #age-modal-left {
     margin: 15vw -10.5vw;
+  }
+  .question-div {
+    top: 7%;
+    left: 30%;
+  }
+  .choice-text-mood {
+    color: white;
+    font-size: 4vw;
+    top: 7vw;
+    left: 9vw;
   }
   #back-button-results {
     width: auto;

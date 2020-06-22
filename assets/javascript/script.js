@@ -339,9 +339,9 @@ function getSongData(){
     var title = "title";
 
     $("#results-song-title").append(response.data[0][title]);
-    var songImage = response.data[0].album.cover_small;
+    var songImage = response.data[0].album.cover_medium;
     changeSong(response.data[0].preview);
-    //$("#song-image").append(`<img id="album-pic" src=${songImage} />`);
+    $("#results-song-image").append(`<img id="album-pic" src=${songImage} />`);
     //  $("#info-here").append(response.hosts.images);
     //---
     //thinking here we call change song method that takes in the mp3 file as the parameter and changes song using following code

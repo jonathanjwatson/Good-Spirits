@@ -53,7 +53,7 @@ $(document).ready(function () {
     "calm|jazz": "Black Bird (remastered 2009)",
     
   
-  }
+  };
 
   // drink variables from Joel
 
@@ -96,9 +96,9 @@ $(document).ready(function () {
     "zen|brandy": "Artillery Punch", //zen brandy
   };
 
-  var songz = {
-    "thirsty|country": "My Little Girl",
-  };
+  // var songz = {
+  //   "thirsty|country": "My Little Girl",
+  // };
 
   function getSongData() {
     var moodSongString = moodMusicArray.join("|");
@@ -224,14 +224,15 @@ $(document).ready(function () {
     console.log(moodBoozeArray);
   }
 
-  function hardReset() {
-    moodBoozeArray = [];
-    moodMusicArray = [];
-    $("#results-drink-div").html("");
-    $("#results-music-display-div").empty();
-  }
+  
 }); // end of document.ready
-
+function hardReset() {
+  moodBoozeArray = [];
+  moodMusicArray = [];
+  $("#results-drink-div").html("");
+  $("#results-music-display-div").empty();
+  toLandingPage();
+}
 //-------------------------------------------------
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
@@ -250,7 +251,7 @@ function toLandingPage() {
   $("#booze-page").hide();
   $("#results-page").hide();
   $("#landing-page").show();
-  hardReset();
+  //hardReset();
 }
 
 // if user is 21, this navigates forward to mood page

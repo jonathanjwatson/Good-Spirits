@@ -96,10 +96,6 @@ $(document).ready(function () {
     "zen|brandy": "Artillery Punch", //zen brandy
   };
 
-  var songz = {
-    "thirsty|country": "My Little Girl",
-  };
-
   function getSongData() {
     var moodSongString = moodMusicArray.join("|");
     var searchSong = songz[moodSongString];

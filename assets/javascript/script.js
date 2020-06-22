@@ -1,6 +1,47 @@
-var songs = [];
+
+//look into switch cases to 
+//just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
+
+ // getDrinkData(drink);
+ var songs = [];
 var availLiquor = [];
 var ingredientString = [];
+var seconds = 0;
+//var song = "Eminem";
+var moodMusicArray = [];
+var moodBoozeArray = [];
+var moodEl;
+var musicEl;
+var boozeEl;
+ // getSongData();
+  // var queryInitial =
+  //   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+  // var searchDrink = "Mojito";
+  // var queryURL = queryInitial + searchDrink;
+  // $.ajax({
+  //   url: queryURL,
+  //   method: "GET",
+  // }).then(function (response) {
+  //   console.log(response);
+  //   // in this function I will pass in the name of drink and save all data needed to be displayed.
+  //   //$("#drinks-here").append(response.drinks[0].strDrink);
+  //   // $("#instructions-here").append(response.drinks[0].strInstructions);
+  //   drinkPics.push(response.drinks[0]["strDrinkThumb"]);
+  //   for (var i = 1; i <= 15; i++) {
+  //     var key = "strIngredient" + i;
+  //     if (response.drinks[0][key] !== null) {
+  //       ingredientString.push(response.drinks[0][key]);
+  //       //ingredientString = ingredientString + " " + response.drinks[0][key];
+  //       // availLiquor[i].ingredients.push(response.drinks[0][key]);
+  //       // console.log(availLiquor[i].ingredients);
+  //       //$("#ingredients-here").append(response.drinks[0][key]);
+  //     }
+  //     console.log(response.drinks[0][key]);
+  //     console.log(ingredientString);
+  //   }
+  //   //$("#drinks-here").append(response.drinks[0].strDrink);
+  // });
+
 var happyRock = [
   "https://deezerdevs-deezer.p.rapidapi.com/search?q=elvis+presley",
 ];
@@ -110,6 +151,8 @@ var thistyCountry = [
   "https://cdns-preview-4.dzcdn.net/stream/c-4411bb93125a133e3d9d23b6c34d831f-2.mp3",
 ];
 // drink variables from Joel
+
+
 var drinks = {
   "happy|vodka": "Victory Collins",
   "happy|rum": "Day At The Beach", // happy rum
@@ -150,8 +193,126 @@ var drinks = {
 };
 
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
+// $(document).ready(function () {
+  
+//  getSongData(song);
+//  getDrinkData(drink);
+  // var search = "eminem";
+  // var settings = {
+  //   async: true,
+  //   crossDomain: true,
+  //   url: "https://deezerdevs-deezer.p.rapidapi.com/search?q=" + search,
+  //   method: "GET",
+  //   headers: {
+  //     "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+  //     "x-rapidapi-key": "c44498c14bmsh109c8caa20abc0ep12e719jsnc8f75e4181e0",
+  //   },
+  // };
+  // //in this anonymous function I will pass in the name of the song and save all data to be displayed.
+  // $.ajax(settings).done(function (response) {
+  //   console.log(response);
+  //   console.log(response.data[0].preview);
+  //   //  $("#info-here").append(response.hosts.images);
+  // });
+
+  // var queryInitial =
+  //   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+  // var searchDrink = "Artillery punch";
+  // var queryURL = queryInitial + searchDrink;
+  // $.ajax({
+  //   url: queryURL,
+  //   method: "GET",
+  // }).then(function (response) {
+  //   console.log(response);
+  //   // in this function I will pass in the name of drink and save all data needed to be displayed.
+  //   $("#drink-name").append(response.drinks[0].strDrink);
+  // var search = "eminem";
+  // var settings = {
+  //   async: true,
+  //   crossDomain: true,
+  //   url: "https://deezerdevs-deezer.p.rapidapi.com/search?q=" + search,
+  //   method: "GET",
+  //   headers: {
+  //     "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+  //     "x-rapidapi-key": "c44498c14bmsh109c8caa20abc0ep12e719jsnc8f75e4181e0",
+  //   },
+  // };
+  //in this anonymous function I will pass in the name of the song and save all data to be displayed.
+  // $.ajax(settings).done(function (response) {
+  //   console.log(response);
+  //   console.log(response.data[0].preview);
+
+  //   // appending the image of the drink to the dom
+  //   var drinkImage = response.drinks[0].strDrinkThumb;
+  //   $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
+
+  //   for (var i = 1; i <= 15; i++) {
+  //     var key = "strIngredient" + i;
+  //     if (response.drinks[0][key] !== null) {
+  //       console.log(response.drinks[0][key]);
+  //     }
+  //     $("#drink-ingredients").append(response.drinks[0][key]);
+  //   }
+  //   // $("#drinks-here").append(response.drinks[0].strDrink);
+  //   for (var i = 1; i <= 15; i++) {
+  //     var measure = "strMeasure" + i;
+  //     if (response.drinks[0][measure] !== null) {
+  //       console.log(response.drinks[0][measure]);
+  //     }
+  //     $("#drink-ingredients").append(response.drinks[0][measure]);
+  //   }
+
+  //   $("#drink-instructions").append(response.drinks[0].strInstructions);
+  //   console.log(response.drinks[0].strInstructions);
+  // });
+
+// function getDrinkData(drinkName){
+//   var queryInitial =
+//     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+//   var searchDrink = drinkName;
+//   var queryURL = queryInitial + searchDrink;
+//   $.ajax({
+//     url: queryURL,
+//     method: "GET",
+//   }).then(function (response) {
+//     console.log(response);
+//     // in this function I will pass in the name of drink and save all data needed to be displayed.
+//     $("#drink-name").append(response.drinks[0].strDrink);
+
+//     // appending the image of the drink to the dom
+//     var drinkImage = response.drinks[0].strDrinkThumb;
+//     $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
+
+//     for (var i = 1; i <= 15; i++) {
+//       var key = "strIngredient" + i;
+//       if (response.drinks[0][key] !== null) {
+//         console.log(response.drinks[0][key]);
+//       }
+//       $("#drink-ingredients").append(response.drinks[0][key]);
+//     }
+//     // $("#drinks-here").append(response.drinks[0].strDrink);
+//     for (var i = 1; i <= 15; i++) {
+//       var measure = "strMeasure" + i;
+//       if (response.drinks[0][measure] !== null) {
+//         console.log(response.drinks[0][measure]);
+//       }
+//       $("#drink-ingredients").append(response.drinks[0][measure]);
+//     }
+
+//     $("#drink-instructions").append(response.drinks[0].strInstructions);
+//     console.log(response.drinks[0].strInstructions);
+//   });
+//}
 $(document).ready(function () {
-  var search = "eminem";
+var songz = {
+  "thirsty|country": "My Little Girl",
+}
+
+function getSongData(){
+  var moodSongString = moodMusicArray.join("|");
+  var searchSong = songz[moodSongString];
+  console.log(searchSong);
+  var search = searchSong;
   var settings = {
     async: true,
     crossDomain: true,
@@ -166,14 +327,35 @@ $(document).ready(function () {
   $.ajax(settings).done(function (response) {
     console.log(response);
     console.log(response.data[0].preview);
+    var title = "title";
+
+    $("#results-song-title").append(response.data[0][title]);
+    var songImage = response.data[0].album.cover_small;
+    changeSong(response.data[0].preview);
+    //$("#song-image").append(`<img id="album-pic" src=${songImage} />`);
     //  $("#info-here").append(response.hosts.images);
+    //---
+    //thinking here we call change song method that takes in the mp3 file as the parameter and changes song using following code
+    
   });
-  // drinks -----------------------------------------------------------------
-  var moodMusicArray = [];
-  var moodBoozeArray = [];
-  var moodEl;
-  var musicEl;
-  var boozeEl;
+  
+}
+function changeSong(mp3File){
+  console.log(mp3File);
+  $("#music-player-source").attr("src",mp3File);
+
+var audio = $("#music-player");      
+
+audio[0].pause();
+audio[0].load();//suspends and restores all audio element
+
+// if (isAutoplay) 
+//     audio[0].play();
+ }
+
+  // ELIZABETH'S CODE -----------------------------------
+ 
+
   var queryInitial =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
     //Joel's code
@@ -220,6 +402,7 @@ $(document).ready(function () {
     musicEl = music;
     console.log(musicEl);
     chooseUserSong();
+    getSongData();
     toBoozePage();
   });
   // event listener to get selected alcohol choice

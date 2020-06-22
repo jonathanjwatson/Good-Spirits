@@ -1,3 +1,4 @@
+
 //look into switch cases to
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
@@ -132,11 +133,11 @@ $(document).ready(function () {
     console.log(mp3File);
     $("#music-player-source").attr("src", mp3File);
 
+
     var audio = $("#music-player");
 
     audio[0].pause();
     audio[0].load(); //suspends and restores all audio element
-
   }
 
   // ELIZABETH'S CODE -----------------------------------

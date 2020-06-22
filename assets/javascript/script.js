@@ -112,43 +112,43 @@ var thistyCountry = [
 // drink variables from Joel
 var drinks = {
   "happy|vodka": "Victory Collins",
-  "happy|rum":"Day At The Beach", // happy rum
-  "happy|gin":"Orange Oasis", //happy Gin
-  "happy|whiskey":"Alleghany", //happy whiskey
+  "happy|rum": "Day At The Beach", // happy rum
+  "happy|gin": "Orange Oasis", //happy Gin
+  "happy|whiskey": "Alleghany", //happy whiskey
   "happy|tequilla": "Tequilla Sunrise", // happy tequilla
   "happy|brandy": "Brandy Cobbler", //happy brandy
-  "sad|vodka":"Bruised Heart", //sad vadka
+  "sad|vodka": "Bruised Heart", //sad vadka
   "sad|rum": "Adios Amigos Cocktail", //sad rum
-  "sad|gin":"Corpse Reviver", //sad gin
-  "sad|whiskey":"Bourbon Sour", //sad whiskey
-  "sad|tequilla":"3-Mile Long Island Iced Tea", //sad tequilla
+  "sad|gin": "Corpse Reviver", //sad gin
+  "sad|whiskey": "Bourbon Sour", //sad whiskey
+  "sad|tequilla": "3-Mile Long Island Iced Tea", //sad tequilla
   "sad|brandy": "Brandy Sour", //sad brandy
-  "thirsty|vodka":"Popped Cherry", //thirsty vodka
-  "thirsty|rum":"Bahama Mama", // thirsty rum
-  "thirsty|gin":"69 Special", //thirsty gin
+  "thirsty|vodka": "Popped Cherry", //thirsty vodka
+  "thirsty|rum": "Bahama Mama", // thirsty rum
+  "thirsty|gin": "69 Special", //thirsty gin
   "thirsty|whiskey": "Midnight Cowboy", //thirsty wisky
-  "thirsty|tequilla":"Paloma", //thirsty tequilla
-  "thirsty|brandy":"Between The Sheets", //thirsty brandy
-  "energized|vodka":"1-900-FUK-MEUP", //energized vodka
-  "energized|rum":"Adam Bomb", //energized rum
-  "energized|gin":"Salty Dog", //energized gin
-  "energized|whiskey":"Fahrenheit 5000", //energized whiskey
-  "energized|tequilla":"Brave Bull Shooter", //nergized tequilla
+  "thirsty|tequilla": "Paloma", //thirsty tequilla
+  "thirsty|brandy": "Between The Sheets", //thirsty brandy
+  "energized|vodka": "1-900-FUK-MEUP", //energized vodka
+  "energized|rum": "Adam Bomb", //energized rum
+  "energized|gin": "Salty Dog", //energized gin
+  "energized|whiskey": "Fahrenheit 5000", //energized whiskey
+  "energized|tequilla": "Brave Bull Shooter", //nergized tequilla
   "energized|brandy": "English Highball", //energized brandy
-  "calm|vodka":"Dirty Martini", //calm vodka
-  "calm|rum":"Rum Punch", //calm rum
-  "calm|gin":"Gin And Tonic", //calm gin
+  "calm|vodka": "Dirty Martini", //calm vodka
+  "calm|rum": "Rum Punch", //calm rum
+  "calm|gin": "Gin And Tonic", //calm gin
   "calm|whiskey": "Sazerac", //calm whiskey
-  "calm|tequilla":"Tequilla Slammer", //calm tequilla
-  "calm|brandy":"Boston Sidecar", //calm brandy
+  "calm|tequilla": "Tequilla Slammer", //calm tequilla
+  "calm|brandy": "Boston Sidecar", //calm brandy
   "zen|vodka": "Absolut Stress #2", //zen vodka
   "zen|rum": "Zombie", //zen rum
-  "zen|gin":"Jitter Bug", //zen gin
-  "zen|whiskey":"Artillery Punch", //zen whiskey
-  "zen|tequilla":"Downshift", //zen tequilla
-  "zen|brandy":"Artillery Punch", //zen brandy
-}
-  
+  "zen|gin": "Jitter Bug", //zen gin
+  "zen|whiskey": "Artillery Punch", //zen whiskey
+  "zen|tequilla": "Downshift", //zen tequilla
+  "zen|brandy": "Artillery Punch", //zen brandy
+};
+
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
   var search = "eminem";
@@ -176,6 +176,7 @@ $(document).ready(function () {
   var boozeEl;
   var queryInitial =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+    //Joel's code
   // in this function I will pass in the name of drink and save all data needed to be displayed.
   function generateDrinkDisplay() {
     var moodBoozeStr = moodBoozeArray.join("|");
@@ -200,7 +201,9 @@ $(document).ready(function () {
         $("#drink-ingredients").append(response.drinks[0][key] + ", ");
         $("#drink-ingredients").append(response.drinks[0][measure] + `<br>`);
       }
-      $("#drink-instructions").append(`<br>` + response.drinks[0].strInstructions);
+      $("#drink-instructions").append(
+        `<br>` + response.drinks[0].strInstructions
+      );
     });
   }
   // ELIZABETH'S CODE -----------------------------------

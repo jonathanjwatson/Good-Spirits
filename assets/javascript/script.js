@@ -267,11 +267,10 @@ $(document).ready(function () {
     moodBoozeArray.push(moodEl, boozeEl);
     console.log(moodBoozeArray);
   }
+
 }); // end of document.ready
 
-//-------------------------------------------------
-// onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
-
+// keep these click functions outside of document ready
 // navigate from landing page to age verification page
 function toAgeVerificationPage() {
   $("#landing-page").hide();
@@ -280,6 +279,8 @@ function toAgeVerificationPage() {
 
 // redirects to landing page when user clicks "back" from any page
 function toLandingPage() {
+  moodBoozeArray = [];
+  moodMusicArray = [];
   $("#age-verification-page").hide();
   $("#mood-page").hide();
   $("#music-page").hide();

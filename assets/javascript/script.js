@@ -132,45 +132,43 @@ $(document).ready(function () {
  
  
  var drinks = {
-   "happy|vodka": "Victory Collins",
- }
- 
-   // "Victory Collins", // happy vodka
-   // "Day At The Beach", // happy rum
-   // "Orange Oasis", //happy Gin
-   // "Alleghany", //happy whiskey
-   // "Tequilla Sunrise", // happy tequilla
-   // "Brandy Cobbler", //happy brandy
-   // "Bruised Heart", //sad vadka
-   // "Adios Amigos Cocktail", //sad rum
-   // "Corpse Reviver", //sad gin
-   // "Bourbon Sour", //sad whiskey
-   // "3-Mile Long Island Iced Tea", //sad tequilla
-   // "Brandy Sour", //sad brandy
-   // "Popped Cherry", //thirsty vodka
-   // "Bahama Mama", // thirsty rum
-   // "69 Special", //thirsty gin
-   // "Midnight Cowboy", //thirsty wisky
-   // "Paloma", //thirsty tequilla
-   // "Between The Sheets", //thirsty brandy
-   // "1-900-FUK-MEUP", //energized vodka
-   // "Adam Bomb", //energized rum
-   // "Salty Dog", //energized gin
-   // "Fahrenheit 5000", //energized whiskey
-   // "Brave Bull Shooter", //nergized tequilla
-   // "English Highball", //energized brandy
-   // "Dirty Martini", //calm vodka
-   // "Rum Punch", //calm rum
-   // "Gin And Tonic", //calm gin
-   // "Sazerac", //calm whiskey
-   // "Tequilla Slammer", //calm tequilla
-   // "Boston Sidecar", //calm brandy
-   // "Absolut Stress #2", //zen vodka
-   // "Zombie", //zen rum
-   // "Jitter Bug", //zen gin
-   // "Artillery Punch", //zen whiskey
-   // "Downshift", //zen tequilla
-   // "Artillery Punch", //zen brandy
+  "happy|vodka": "Victory Collins",
+  "happy|rum": "Day At The Beach", // happy rum
+  "happy|gin": "Orange Oasis", //happy Gin
+  "happy|whiskey": "Alleghany", //happy whiskey
+  "happy|tequilla": "Tequilla Sunrise", // happy tequilla
+  "happy|brandy": "Brandy Cobbler", //happy brandy
+  "sad|vodka": "Bruised Heart", //sad vadka
+  "sad|rum": "Adios Amigos Cocktail", //sad rum
+  "sad|gin": "Corpse Reviver", //sad gin
+  "sad|whiskey": "Bourbon Sour", //sad whiskey
+  "sad|tequilla": "3-Mile Long Island Iced Tea", //sad tequilla
+  "sad|brandy": "Brandy Sour", //sad brandy
+  "thirsty|vodka": "Popped Cherry", //thirsty vodka
+  "thirsty|rum": "Bahama Mama", // thirsty rum
+  "thirsty|gin": "69 Special", //thirsty gin
+  "thirsty|whiskey": "Midnight Cowboy", //thirsty wisky
+  "thirsty|tequilla": "Paloma", //thirsty tequilla
+  "thirsty|brandy": "Between The Sheets", //thirsty brandy
+  "energized|vodka": "1-900-FUK-MEUP", //energized vodka
+  "energized|rum": "Adam Bomb", //energized rum
+  "energized|gin": "Salty Dog", //energized gin
+  "energized|whiskey": "Fahrenheit 5000", //energized whiskey
+  "energized|tequilla": "Brave Bull Shooter", //nergized tequilla
+  "energized|brandy": "English Highball", //energized brandy
+  "calm|vodka": "Dirty Martini", //calm vodka
+  "calm|rum": "Rum Punch", //calm rum
+  "calm|gin": "Gin And Tonic", //calm gin
+  "calm|whiskey": "Sazerac", //calm whiskey
+  "calm|tequilla": "Tequilla Slammer", //calm tequilla
+  "calm|brandy": "Boston Sidecar", //calm brandy
+  "zen|vodka": "Absolut Stress #2", //zen vodka
+  "zen|rum": "Zombie", //zen rum
+  "zen|gin": "Jitter Bug", //zen gin
+  "zen|whiskey": "Artillery Punch", //zen whiskey
+  "zen|tequilla": "Downshift", //zen tequilla
+  "zen|brandy": "Artillery Punch", //zen brandy
+};
  
  
  var songz = {

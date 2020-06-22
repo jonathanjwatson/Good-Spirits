@@ -13,34 +13,7 @@ var moodBoozeArray = [];
 var moodEl;
 var musicEl;
 var boozeEl;
- // getSongData();
-  // var queryInitial =
-  //   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-  // var searchDrink = "Mojito";
-  // var queryURL = queryInitial + searchDrink;
-  // $.ajax({
-  //   url: queryURL,
-  //   method: "GET",
-  // }).then(function (response) {
-  //   console.log(response);
-  //   // in this function I will pass in the name of drink and save all data needed to be displayed.
-  //   //$("#drinks-here").append(response.drinks[0].strDrink);
-  //   // $("#instructions-here").append(response.drinks[0].strInstructions);
-  //   drinkPics.push(response.drinks[0]["strDrinkThumb"]);
-  //   for (var i = 1; i <= 15; i++) {
-  //     var key = "strIngredient" + i;
-  //     if (response.drinks[0][key] !== null) {
-  //       ingredientString.push(response.drinks[0][key]);
-  //       //ingredientString = ingredientString + " " + response.drinks[0][key];
-  //       // availLiquor[i].ingredients.push(response.drinks[0][key]);
-  //       // console.log(availLiquor[i].ingredients);
-  //       //$("#ingredients-here").append(response.drinks[0][key]);
-  //     }
-  //     console.log(response.drinks[0][key]);
-  //     console.log(ingredientString);
-  //   }
-  //   //$("#drinks-here").append(response.drinks[0].strDrink);
-  // });
+
 
 var happyRock = [
   "https://deezerdevs-deezer.p.rapidapi.com/search?q=elvis+presley",

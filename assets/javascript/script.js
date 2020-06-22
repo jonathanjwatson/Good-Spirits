@@ -164,6 +164,7 @@ $(document).ready(function () {
     "zen|brandy": "Artillery Punch", //zen brandy
   };
 
+
   var songz = {
     "thirsty|country": "My Little Girl",
   };
@@ -201,11 +202,11 @@ $(document).ready(function () {
     console.log(mp3File);
     $("#music-player-source").attr("src", mp3File);
 
+
     var audio = $("#music-player");
 
     audio[0].pause();
     audio[0].load(); //suspends and restores all audio element
-
   }
 
   // ELIZABETH'S CODE -----------------------------------

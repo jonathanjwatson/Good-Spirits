@@ -288,12 +288,12 @@
         <span class="spirits">Spirits</span>
       </div>
       <div class="container">
-      <div class="row card question-div" id="booze-question-div">
-        <div class="question-text" id="booze-question-text">
-          Select your choice of liquor:
+        <div class="row card question-div" id="booze-question-div">
+          <div class="question-text" id="booze-question-text">
+            Select your choice of liquor:
+          </div>
         </div>
       </div>
-    </div>
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-md-4 custom-row-card" id="brandy">
@@ -307,7 +307,7 @@
           <div class="col-xs-6 col-md-4 custom-row-card" id="rum">
             <div class="choice-text choice-text-booze">Rum</div>
             <img class="imagesBooze" src="./assets/images/Rum.jpg" />
-          </div>      
+          </div>
           <div class="col-xs-6 col-md-4 card custom-row-card" id="vodka">
             <div class="choice-text choice-text-booze">Vodka</div>
             <img class="imagesBooze" src="./assets/images/Vodka.jpg" />
@@ -347,15 +347,17 @@
             >
               Listen
             </h1>
-            <h2 id="results-song-title"></h2>
-            <div id="results-song-image"> 
-            <audio controls preload id="music-player">
-              <source
-                id="music-player-source"
-                src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
-                type="audio/mpeg"
-              />
-            </audio>
+            <div id="results-music-display-div">
+              <h2 id="results-song-title"></h2>
+              <div id="results-song-image">
+                <audio controls preload id="music-player">
+                  <source
+                    id="music-player-source"
+                    src="https://cdns-preview-6.dzcdn.net/stream/c-6459c8b016dc1b331cd1e7c0fd2f0f41-4.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </div>
             </div>
           </div>
         </div>

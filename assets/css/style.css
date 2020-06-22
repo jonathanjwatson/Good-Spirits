@@ -72,41 +72,37 @@ img {
 .choice-text {
   font-family: "Julius Sans One", sans-serif;
   position: absolute;
+  z-index: 1;
 }
 
 .choice-text-booze {
   color: white;
   font-size: 4vw;
-  top: 2vw;
-  left: 2vw;
+  padding: 4% 6%;
 }
 
 .choice-text-mood {
   color: white;
   font-size: 4vw;
-  top: 1vw; 
-  left: 2vw;
+  top: 3vw;
+  left: 4vw;
 }
 
 .choice-text-music {
   color: black;
   font-size: 3vw;
-  top: 1vw;
-  left: 19vw;
+  top: 2vw;
+  left: 20vw;
   text-align: right;
   font-weight: bolder;
 }
 
-.custom-row-card {
-  width: 30vw;
-  padding: 0vw;
-  margin: 5vw 1.6vw 0vw;
-  box-shadow: 20px 20px 15px #000;
-  transition: transform 0.2s;
+.container {
+  padding-top: 3% !important;
 }
 
-.custom-row-card:hover {
-  transform: scale(1.05);
+.custom-row-card {
+  padding: 19px;
 }
 
 .custom-text-left {
@@ -149,7 +145,11 @@ img {
   font-size: 3vw;
   right: 59vw;
   padding-bottom: 1.3vw;
-  margin: -2.8vw -5vw;
+  margin: -3vw -5vw;
+}
+
+.good-mood {
+  margin: -2vw -5vw !important;
 }
 
 .good-half {
@@ -193,15 +193,46 @@ img {
   text-shadow: 1px 1px 2px #000;
 }
 
+.imagesBooze {
+  box-shadow: 20px 20px 15px #000;
+  transition: transform 0.2s;
+}
+
+.imagesBooze:hover {
+  transform: scale(1.05);
+}
+
+.imagesMood {
+  box-shadow: 20px 20px 15px #000;
+  transition: transform 0.2s;
+}
+
+.imagesMood:hover {
+  transform: scale(1.05);
+}
+
+.imagesMusic {
+  box-shadow: 20px 20px 15px #000;
+  transition: transform 0.2s;
+}
+
+.imagesMusic:hover {
+  transform: scale(1.05);
+}
+
+.jumbotron-questions {
+  padding: 3.7vw;
+}
+
 .question-div {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 47%;
+  width: 50%;
   height: 5vw;
   position: absolute;
   z-index: 1;
-  top: 8vw;
+  top: 9vw;
   border-radius: 5px;
-  right: 26vw;
+  right: 25%;
   box-shadow: 5px 5px 7px #000;
 }
 
@@ -245,9 +276,13 @@ img {
 .spirits {
   font-family: "Vast Shadow", cursive;
   font-size: 3.5vw;
-  margin: -3.4vw 0vw 0vw;
+  margin: -3.5% 0% 0%;  
   position: absolute;
   left: 48vw;
+}
+
+.spirits-mood {
+  margin: -2.5% 0% 0%;
 }
 
 .spirits-half {
@@ -451,9 +486,9 @@ img {
   .back-button-white {
     margin: 0.1vw;
   }
-  .custom-row-card {
+  /* .custom-row-card {
     margin: 6vw 1.6vw 0vw;
-  }
+  } */
   .custom-text-left {
     margin: 29vw 4.5vw;
   }
@@ -493,17 +528,17 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .age-text {
     font-size: 5vw;
   }
   .back-button-white {
     top: 5vw;
   }
-  .custom-row-card {
+  /* .custom-row-card {
     margin: 11vw 15.6vw -5vw;
-  }
-  .custom-text-left {
+  } */
+  /* .custom-text-left {
     margin: 36vw -3vw;
     right: 25%;
     font-size: 6vw;
@@ -511,8 +546,8 @@ img {
   .custom-text-right {
     font-size: 4.5vw;
     margin: 8.5vw 1vw;
-  }
-  .forward-button {
+  } */
+  /* .forward-button {
     top: 5vw;
     width: 13.5vw;
   }
@@ -530,8 +565,8 @@ img {
   }
   .question-text {
     margin: 2.9vw 3.3vw;
-  }
-  .spirits {
+  } */
+  /* .spirits {
     font-size: 5vw;
     margin: -7vw 0vw 0vw;
   }
@@ -542,18 +577,18 @@ img {
   #age-modal-right {
     margin: 15vw -2vw;
     padding: 4vw;
-  }
-  #calm {
+  } */ 
+  /* #calm {
     position: absolute;
     top: 47vw;
     left: 39vw;
-  }
-  #country {
+  } */
+  /* #country {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  }
-  #edm {
+  } */
+  /* #edm {
     position: absolute;
     top: 47vw;
     left: 39vw;
@@ -612,13 +647,13 @@ img {
   }
   #results-header-text-right {
     margin: 20vw 0vw;
-  }
-  #sad {
+  } */
+  /* #sad {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  }
-  #tequila {
+  } */
+  /* #tequila {
     position: absolute;
     top: 0vw;
     left: 39vw;
@@ -627,10 +662,10 @@ img {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  }
-  #zen {
+  } */
+  /* #zen {
     position: absolute;
     top: 0vw;
     left: 39vw;
-  }
-}
+  } */
+/* } */

@@ -346,6 +346,10 @@ img {
   display: none;
 }
 
+#back-button-results {
+  width: auto;
+}
+
 #booze-page {
   background: url(../images/BlackandBlue.jpg) no-repeat center center fixed;
 }

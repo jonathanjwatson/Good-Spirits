@@ -77,22 +77,22 @@ img {
 
 .choice-text-booze {
   color: white;
-  font-size: 4vw;
-  padding: 4% 6%;
+  font-size: 3vw;
+  padding: 6% 9%;
 }
 
 .choice-text-mood {
   color: white;
-  font-size: 4vw;
-  top: 3vw;
-  left: 4vw;
+  font-size: 3em;
+  top: 17%;
+  left: 13%;
 }
 
 .choice-text-music {
   color: black;
-  font-size: 3vw;
-  top: 2vw;
-  left: 20vw;
+  font-size: 2.5em;
+  top: 13%;
+  left: 63%;
   text-align: right;
   font-weight: bolder;
 }
@@ -108,7 +108,7 @@ img {
 .custom-text-left {
   font-family: "Julius Sans One", sans-serif;
   font-size: 4vw;
-  margin: 24.8vw 0vw;
+  margin: 92% 0%;
   position: absolute;
   right: 2vw;
   text-shadow: 1px 1px 5px #333;
@@ -178,7 +178,7 @@ img {
 
 .header-text-left {
   font-family: "Julius Sans One", sans-serif;
-  margin: 11.7vw 0vw 0vw;
+  margin: 30% 0% 15% 0%;
   position: absolute;
   right: 1.4vw;
   padding-bottom: 1.3vw;
@@ -187,7 +187,7 @@ img {
 
 .header-text-right {
   font-family: "Vast Shadow", cursive;
-  margin: 11.5vw 0vw 0vw;
+  margin: 32.5% 0%;
   width: 171%;
   padding-bottom: 1.4vw;
   text-shadow: 1px 1px 2px #000;
@@ -261,7 +261,7 @@ img {
 }
 
 .results-header-text {
-  margin: 5vw 0vw 0vw;
+  margin: 10% 0vw 0vw;
 }
 
 .single-background {
@@ -303,7 +303,6 @@ img {
 
 /* ids ====================================================== */
 #age-modal-left {
-  position: absolute;
   z-index: 1;
   border: 3px solid #000;
   border-right: none;
@@ -313,12 +312,11 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw -0.4vw;
+  margin: 55% -2%;
   padding: 3vw;
 }
 
 #age-modal-right {
-  position: absolute;
   z-index: 1;
   border: 3px solid white;
   border-left: none;
@@ -328,7 +326,7 @@ img {
   text-align: center;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3vw;
-  margin: 15vw -2vw;
+  margin: 55% -5%;
   padding: 3vw;
 }
 
@@ -346,6 +344,14 @@ img {
   display: none;
 }
 
+#album-pic {
+  position: absolute;
+  top: 65%;
+  left: 16%;
+  text-align: right;
+  box-shadow: 3px 3px 10px 0;
+}
+
 #back-button-results {
   width: auto;
 }
@@ -361,19 +367,62 @@ img {
 }
 
 #country-text {
-  left: 14.5vw;
+  left: 49%;
 }
 
 #drink-name {
   font-family: "Julius Sans One", sans-serif;
   font-weight: bold;
-  font-size: 3vw;
-  margin: 2vw 0vw;
+  font-size: 2em;
+  margin: 53% -18% 0%;
   width: 100vw;
+}
+
+#drink-image {
+  margin: 10% 0%;
+  position: relative;
+  left: -17%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-ingredients {
+  position: relative;
+  top: -19vw;
+  left: 93%;
+  width: 17vw;
+  border: 2px solid black;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 91%;
+  padding: 5%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-ingredients-title {
+  font-family: "Julius Sans One", sans-serif;
+  position: relative;
+  top: -19.7vw;
+  left: 93%;
+  width: 17vw;
+  font-size: 2em;
+  border: 2px solid black;
+  padding: 1% 4%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-instructions {
+  font-family: "Julius Sans One", sans-serif;
+  border: 2px solid black;
+  position: relative;
+  left: 93%;
+  top: -18vw;
+  width: 95%;
+  padding: 0% 8% 6% 8%;
+  box-shadow: 3px 3px 10px 0;
 }
 
 #kids-header-text-right {
   width: 100%;
+  margin-bottom: 22%;
 }
 
 #kids-page {
@@ -413,6 +462,8 @@ img {
 
 #landing-text-right {
   font-size: 3vw;
+  position: relative;
+  top: -2.2vw;
 }
 
 #mood-page {
@@ -430,11 +481,11 @@ img {
 }
 
 #music-player {
-  margin: 26vw -3vw;
+  margin: 81% 30%;
   position: absolute;
   box-shadow: 3px 3px 20px #333;
   border-radius: 25px;
-  left: -4.5vw;
+  left: -26%;
 }
 
 #music-question-text {
@@ -454,6 +505,25 @@ img {
   text-shadow: 3px 3px 0 #333;
 }
 
+#results-header-text-left {
+  font-size: 5em;
+  text-align: right;
+  padding: 0% 0% 0% 79%;
+  position: absolute;
+  right: -16%;
+}
+
+#results-header-text-right {
+  font-size: 5em;
+  text-align: center;
+  margin: 9% -38%;
+  font-size: 5em;
+  text-align: left;
+  padding: 0% 34% 0% 0%;
+  position: absolute;
+  right: -16%;
+}
+
 #results-page {
   display: none;
 }
@@ -464,6 +534,15 @@ img {
 
 #results-page-right {
   background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+#results-song-title {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 55% -83%;
+  width: 200%;
+  text-align: right;
 }
 
 #yes-button {
@@ -552,17 +631,17 @@ img {
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .age-text {
     font-size: 5vw;
   }
   .back-button-white {
     top: 5vw;
   }
-  /* .custom-row-card {
+  .custom-row-card {
     margin: 11vw 15.6vw -5vw;
-  } */
-/* .custom-text-left {
+  }
+  .custom-text-left {
     margin: 36vw -3vw;
     right: 25%;
     font-size: 6vw;
@@ -570,8 +649,8 @@ img {
   .custom-text-right {
     font-size: 4.5vw;
     margin: 8.5vw 1vw;
-  } */
-/* .forward-button {
+  }
+  .forward-button {
     top: 5vw;
     width: 13.5vw;
   }
@@ -589,8 +668,8 @@ img {
   }
   .question-text {
     margin: 2.9vw 3.3vw;
-  } */
-/* .spirits {
+  }
+  .spirits {
     font-size: 5vw;
     margin: -7vw 0vw 0vw;
   }
@@ -601,18 +680,18 @@ img {
   #age-modal-right {
     margin: 15vw -2vw;
     padding: 4vw;
-  } */
-/* #calm {
+  }
+  #calm {
     position: absolute;
     top: 47vw;
     left: 39vw;
-  } */
-/* #country {
+  }
+  #country {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  } */
-/* #edm {
+  }
+  #edm {
     position: absolute;
     top: 47vw;
     left: 39vw;
@@ -671,13 +750,13 @@ img {
   }
   #results-header-text-right {
     margin: 20vw 0vw;
-  } */
-/* #sad {
+  }
+  #sad {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  } */
-/* #tequila {
+  }
+  #tequila {
     position: absolute;
     top: 0vw;
     left: 39vw;
@@ -686,13 +765,13 @@ img {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  } */
-/* #zen {
+  }
+  #zen {
     position: absolute;
     top: 0vw;
     left: 39vw;
-  } */
-/* } */
+  }
+}
 @media screen and (max-width: 576px) {
   .good {
     font-size: 7vw;

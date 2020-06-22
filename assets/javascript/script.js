@@ -1,3 +1,4 @@
+
 //look into switch cases to
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
@@ -11,42 +12,42 @@ $(document).ready(function () {
   var songz = {
     "thirsty|country": "My Little Girl",
     "thirsty|rock": "It must have been love",
-    "thirsty|rnb" : "You like it",
+    "thirsty|randb" : "You like it",
     "thirsty|edm" : "The One",
     "thirsty|indie" : "No Control",
     "thirsty|jazz": "Black Bird (remastered 2009)",
   
     "zen|country": "What I Never Knew I Always Wanted",
     "zen|rock": "Little Wing",
-    "zen|rnb" : "Never Personal",
+    "zen|randb" : "Never Personal",
     "zen|edm" : "Dear Boy",
     "zen|indie" : "Mad Sounds",
     "zen|jazz": "Always Leaving Always Gone",
   
     "happy|country": "My Little Girl",
     "happy|rock": "God's Country",
-    "happy|rnb" : "You like it",
+    "happy|randb" : "You like it",
     "happy|edm" : "The One",
     "happy|indie" : "",
     "happy|jazz": "Always Leaving Always gone",
   
     "sad|country": "God's Country",
     "sad|rock": "Black Bird (remastered 2009)",
-    "sad|rnb" : "Do Re Mi",
+    "sad|randb" : "Do Re Mi",
     "sad|edm" : "My Little Girl",
     "sad|indie" : "Mad Sounds",
     "sad|jazz": "Black Bird (remastered 2009)",
   
     "energized|country": "I Heard The Bells On Christmas Day",
     "energized|rock": "Nadine",
-    "energized|rnb" : "We Own It (fast & furious)",
+    "energized|randb" : "We Own It (fast & furious)",
     "energized|edm": "Detroit 3AM (Radio Edit)",
     "energized|indie": "Wicked Campaign",
     "energized|jazz": "When It's Sleepy Time Down South (Live)",
   
     "calm|country": "What I Never Knew I Always Wanted",
     "calm|rock": "Lttle Wing",
-    "calm|rnb": "Take A Bow",
+    "calm|randb": "Take A Bow",
     "calm|edm": "Dear Boy",
     "calm|indie":"Wicked Campaign",
     "calm|jazz": "Black Bird (remastered 2009)",
@@ -61,37 +62,37 @@ $(document).ready(function () {
     "happy|rum": "Day At The Beach", // happy rum
     "happy|gin": "Orange Oasis", //happy Gin
     "happy|whiskey": "Alleghany", //happy whiskey
-    "happy|tequilla": "Tequilla Sunrise", // happy tequilla
+    "happy|tequila": "Tequilla Sunrise", // happy tequilla
     "happy|brandy": "Brandy Cobbler", //happy brandy
     "sad|vodka": "Bruised Heart", //sad vadka
     "sad|rum": "Adios Amigos Cocktail", //sad rum
     "sad|gin": "Corpse Reviver", //sad gin
     "sad|whiskey": "Bourbon Sour", //sad whiskey
-    "sad|tequilla": "3-Mile Long Island Iced Tea", //sad tequilla
+    "sad|tequila": "3-Mile Long Island Iced Tea", //sad tequilla
     "sad|brandy": "Brandy Sour", //sad brandy
     "thirsty|vodka": "Popped Cherry", //thirsty vodka
     "thirsty|rum": "Bahama Mama", // thirsty rum
     "thirsty|gin": "69 Special", //thirsty gin
     "thirsty|whiskey": "Midnight Cowboy", //thirsty wisky
-    "thirsty|tequilla": "Paloma", //thirsty tequilla
+    "thirsty|tequila": "Paloma", //thirsty tequilla
     "thirsty|brandy": "Between The Sheets", //thirsty brandy
     "energized|vodka": "1-900-FUK-MEUP", //energized vodka
     "energized|rum": "Adam Bomb", //energized rum
     "energized|gin": "Salty Dog", //energized gin
     "energized|whiskey": "Fahrenheit 5000", //energized whiskey
-    "energized|tequilla": "Brave Bull Shooter", //nergized tequilla
+    "energized|tequila": "Brave Bull Shooter", //nergized tequilla
     "energized|brandy": "English Highball", //energized brandy
     "calm|vodka": "Dirty Martini", //calm vodka
     "calm|rum": "Rum Punch", //calm rum
     "calm|gin": "Gin And Tonic", //calm gin
     "calm|whiskey": "Sazerac", //calm whiskey
-    "calm|tequilla": "Tequilla Slammer", //calm tequilla
+    "calm|tequila": "Tequilla Slammer", //calm tequilla
     "calm|brandy": "Boston Sidecar", //calm brandy
     "zen|vodka": "Absolut Stress #2", //zen vodka
     "zen|rum": "Zombie", //zen rum
     "zen|gin": "Jitter Bug", //zen gin
     "zen|whiskey": "Artillery Punch", //zen whiskey
-    "zen|tequilla": "Downshift", //zen tequilla
+    "zen|tequila": "Downshift", //zen tequilla
     "zen|brandy": "Artillery Punch", //zen brandy
   };
 
@@ -132,11 +133,11 @@ $(document).ready(function () {
     console.log(mp3File);
     $("#music-player-source").attr("src", mp3File);
 
+
     var audio = $("#music-player");
 
     audio[0].pause();
     audio[0].load(); //suspends and restores all audio element
-
   }
 
   // ELIZABETH'S CODE -----------------------------------

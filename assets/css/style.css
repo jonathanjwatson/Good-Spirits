@@ -108,7 +108,7 @@ img {
 .custom-text-left {
   font-family: "Julius Sans One", sans-serif;
   font-size: 4vw;
-  margin: 24.8vw 0vw;
+  margin: 92% 0%;
   position: absolute;
   right: 2vw;
   text-shadow: 1px 1px 5px #333;
@@ -178,7 +178,7 @@ img {
 
 .header-text-left {
   font-family: "Julius Sans One", sans-serif;
-  margin: 11.7vw 0vw 0vw;
+  margin: 30% 0% 15% 0%;
   position: absolute;
   right: 1.4vw;
   padding-bottom: 1.3vw;
@@ -187,7 +187,7 @@ img {
 
 .header-text-right {
   font-family: "Vast Shadow", cursive;
-  margin: 11.5vw 0vw 0vw;
+  margin: 32.5% 0%;
   width: 171%;
   padding-bottom: 1.4vw;
   text-shadow: 1px 1px 2px #000;
@@ -348,8 +348,10 @@ img {
 
 #album-pic {
   position: absolute;
-  top: 69%;
-  left: -33%;
+  top: 65%;
+  left: 16%;
+  text-align: right;
+  box-shadow: 3px 3px 10px 0;
 }
 
 #back-button-results {
@@ -373,9 +375,51 @@ img {
 #drink-name {
   font-family: "Julius Sans One", sans-serif;
   font-weight: bold;
-  font-size: 3vw;
-  margin: 2vw 0vw;
+  font-size: 2em;
+  margin: 53% -18% 0%;
   width: 100vw;
+}
+
+#drink-image {
+  margin: 10% 0%;
+  position: relative;
+  left: -17%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-ingredients {
+  position: relative;
+  top: -19vw;
+  left: 93%;
+  width: 17vw;
+  border: 2px solid black;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 91%;
+  padding: 5%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-ingredients-title {
+  font-family: "Julius Sans One", sans-serif;
+  position: relative;
+  top: -19.7vw;
+  left: 93%;
+  width: 17vw;
+  font-size: 2em;
+  border: 2px solid black;
+  padding: 1% 4%;
+  box-shadow: 3px 3px 10px 0;
+}
+
+#drink-instructions {
+  font-family: "Julius Sans One", sans-serif;
+  border: 2px solid black;
+  position: relative;
+  left: 93%;
+  top: -18vw;
+  width: 95%;
+  padding: 0% 8% 6% 8%;
+  box-shadow: 3px 3px 10px 0;
 }
 
 #kids-header-text-right {
@@ -419,6 +463,8 @@ img {
 
 #landing-text-right {
   font-size: 3vw;
+  position: relative;
+  top: -2.2vw;
 }
 
 #mood-page {
@@ -436,7 +482,7 @@ img {
 }
 
 #music-player {
-  margin: 81% -18%;
+  margin: 81% 30%;
   position: absolute;
   box-shadow: 3px 3px 20px #333;
   border-radius: 25px;
@@ -462,17 +508,21 @@ img {
 
 #results-header-text-left {
   font-size: 5em;
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-  padding: 0% 30%;
+  text-align: right;
+  padding: 0% 0% 0% 79%;
+  position: absolute;
+  right: -16%;
 }
 
 #results-header-text-right {
-  font-size: 4em;
+  font-size: 5em;
   text-align: center;
-  margin: auto;
-  margin-top: 5%;
+  margin: 9% -38%;
+  font-size: 5em;
+  text-align: left;
+  padding: 0% 34% 0% 0%;
+  position: absolute;
+  right: -16%;
 }
 
 #results-page {
@@ -490,9 +540,10 @@ img {
 #results-song-title {
   font-family: "Julius Sans One", sans-serif;
   font-weight: bold;
-  font-size: 3vw;
-  margin: 53% -57%;
-  width: 100vw;
+  font-size: 2em;
+  margin: 55% -83%;
+  width: 200%;
+  text-align: right;
 }
 
 #yes-button {
@@ -591,7 +642,7 @@ img {
   .custom-row-card {
     margin: 11vw 15.6vw -5vw;
   }
-.custom-text-left {
+  .custom-text-left {
     margin: 36vw -3vw;
     right: 25%;
     font-size: 6vw;
@@ -600,7 +651,7 @@ img {
     font-size: 4.5vw;
     margin: 8.5vw 1vw;
   }
-.forward-button {
+  .forward-button {
     top: 5vw;
     width: 13.5vw;
   }
@@ -619,7 +670,7 @@ img {
   .question-text {
     margin: 2.9vw 3.3vw;
   }
-.spirits {
+  .spirits {
     font-size: 5vw;
     margin: -7vw 0vw 0vw;
   }
@@ -631,17 +682,17 @@ img {
     margin: 15vw -2vw;
     padding: 4vw;
   }
-#calm {
+  #calm {
     position: absolute;
     top: 47vw;
     left: 39vw;
   }
-#country {
+  #country {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
   }
-#edm {
+  #edm {
     position: absolute;
     top: 47vw;
     left: 39vw;
@@ -701,12 +752,12 @@ img {
   #results-header-text-right {
     margin: 20vw 0vw;
   }
-#sad {
+  #sad {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
   }
-#tequila {
+  #tequila {
     position: absolute;
     top: 0vw;
     left: 39vw;
@@ -715,13 +766,13 @@ img {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
-  } 
-#zen {
+  }
+  #zen {
     position: absolute;
     top: 0vw;
     left: 39vw;
-  } 
-} 
+  }
+}
 @media screen and (max-width: 576px) {
   .good {
     font-size: 7vw;

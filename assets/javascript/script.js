@@ -15,7 +15,7 @@ $(document).ready(function () {
     "thirsty|randb" : "You like it",
     "thirsty|edm" : "The One",
     "thirsty|indie" : "No Control",
-    "thirsty|jazz": "Black Bird (remastered 2009)",
+    "thirsty|jazz": "Black Bird",
   
     "zen|country": "What I Never Knew I Always Wanted",
     "zen|rock": "Little Wing",
@@ -32,11 +32,11 @@ $(document).ready(function () {
     "happy|jazz": "Always Leaving Always gone",
   
     "sad|country": "God's Country",
-    "sad|rock": "Black Bird (remastered 2009)",
+    "sad|rock": "Black Bird",
     "sad|randb" : "Do Re Mi",
     "sad|edm" : "My Little Girl",
     "sad|indie" : "Mad Sounds",
-    "sad|jazz": "Black Bird (remastered 2009)",
+    "sad|jazz": "Black Bird",
   
     "energized|country": "I Heard The Bells On Christmas Day",
     "energized|rock": "Nadine",
@@ -61,8 +61,8 @@ $(document).ready(function () {
     "happy|vodka": "Victory Collins",
     "happy|rum": "Day At The Beach", // happy rum
     "happy|gin": "Orange Oasis", //happy Gin
-    "happy|whiskey": "Alleghany", //happy whiskey
-    "happy|tequila": "Tequilla Sunrise", // happy tequilla
+    "happy|whiskey": "Allegheny", //happy whiskey
+    "happy|tequila": "Tequila Sunrise", // happy tequilla
     "happy|brandy": "Brandy Cobbler", //happy brandy
     "sad|vodka": "Bruised Heart", //sad vadka
     "sad|rum": "Adios Amigos Cocktail", //sad rum
@@ -86,11 +86,11 @@ $(document).ready(function () {
     "calm|rum": "Rum Punch", //calm rum
     "calm|gin": "Gin And Tonic", //calm gin
     "calm|whiskey": "Sazerac", //calm whiskey
-    "calm|tequila": "Tequilla Slammer", //calm tequilla
+    "calm|tequila": "Tequila Slammer", //calm tequilla
     "calm|brandy": "Boston Sidecar", //calm brandy
     "zen|vodka": "Absolut Stress #2", //zen vodka
     "zen|rum": "Zombie", //zen rum
-    "zen|gin": "Jitter Bug", //zen gin
+    "zen|gin": "Jitterbug", //zen gin
     "zen|whiskey": "Artillery Punch", //zen whiskey
     "zen|tequila": "Downshift", //zen tequilla
     "zen|brandy": "Artillery Punch", //zen brandy
@@ -168,6 +168,7 @@ $(document).ready(function () {
         $("#drink-ingredients").append(response.drinks[0][key] + ", ");
         $("#drink-ingredients").append(response.drinks[0][measure] + `<br>`);
       }
+      $("#drink-ingredients-title").append("Ingredients" + `<br>`)
       $("#drink-instructions").append(
         `<br>` + response.drinks[0].strInstructions
       );

@@ -267,43 +267,43 @@ var drinks = {
   //   console.log(response.drinks[0].strInstructions);
   // });
 
-function getDrinkData(drinkName){
-  var queryInitial =
-    "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-  var searchDrink = drinkName;
-  var queryURL = queryInitial + searchDrink;
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-    // in this function I will pass in the name of drink and save all data needed to be displayed.
-    $("#drink-name").append(response.drinks[0].strDrink);
+// function getDrinkData(drinkName){
+//   var queryInitial =
+//     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+//   var searchDrink = drinkName;
+//   var queryURL = queryInitial + searchDrink;
+//   $.ajax({
+//     url: queryURL,
+//     method: "GET",
+//   }).then(function (response) {
+//     console.log(response);
+//     // in this function I will pass in the name of drink and save all data needed to be displayed.
+//     $("#drink-name").append(response.drinks[0].strDrink);
 
-    // appending the image of the drink to the dom
-    var drinkImage = response.drinks[0].strDrinkThumb;
-    $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
+//     // appending the image of the drink to the dom
+//     var drinkImage = response.drinks[0].strDrinkThumb;
+//     $("#drink-image").append(`<img id="drink-id" src=${drinkImage} />`);
 
-    for (var i = 1; i <= 15; i++) {
-      var key = "strIngredient" + i;
-      if (response.drinks[0][key] !== null) {
-        console.log(response.drinks[0][key]);
-      }
-      $("#drink-ingredients").append(response.drinks[0][key]);
-    }
-    // $("#drinks-here").append(response.drinks[0].strDrink);
-    for (var i = 1; i <= 15; i++) {
-      var measure = "strMeasure" + i;
-      if (response.drinks[0][measure] !== null) {
-        console.log(response.drinks[0][measure]);
-      }
-      $("#drink-ingredients").append(response.drinks[0][measure]);
-    }
+//     for (var i = 1; i <= 15; i++) {
+//       var key = "strIngredient" + i;
+//       if (response.drinks[0][key] !== null) {
+//         console.log(response.drinks[0][key]);
+//       }
+//       $("#drink-ingredients").append(response.drinks[0][key]);
+//     }
+//     // $("#drinks-here").append(response.drinks[0].strDrink);
+//     for (var i = 1; i <= 15; i++) {
+//       var measure = "strMeasure" + i;
+//       if (response.drinks[0][measure] !== null) {
+//         console.log(response.drinks[0][measure]);
+//       }
+//       $("#drink-ingredients").append(response.drinks[0][measure]);
+//     }
 
-    $("#drink-instructions").append(response.drinks[0].strInstructions);
-    console.log(response.drinks[0].strInstructions);
-  });
-}
+//     $("#drink-instructions").append(response.drinks[0].strInstructions);
+//     console.log(response.drinks[0].strInstructions);
+//   });
+//}
 function getSongData(songName){
   var search = songName;
   var settings = {

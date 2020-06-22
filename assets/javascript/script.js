@@ -1,12 +1,7 @@
 //look into switch cases to
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
-  // getDrinkData(drink);
-  var songs = [];
-  var availLiquor = [];
-  var ingredientString = [];
-  var seconds = 0;
-  //var song = "Eminem";
+
   var moodMusicArray = [];
   var moodBoozeArray = [];
   var moodEl;
@@ -131,6 +126,7 @@ $(document).ready(function () {
 
   var drinks = {
     "happy|vodka": "Victory Collins",
+    "happy|rum": "Day At The Beach",
   };
 
   // "Victory Collins", // happy vodka
@@ -201,9 +197,6 @@ $(document).ready(function () {
       $("#results-song-image").append(
         `<img id="album-pic" src=${songImage} />`
       );
-      //  $("#info-here").append(response.hosts.images);
-      //---
-      //thinking here we call change song method that takes in the mp3 file as the parameter and changes song using following code
     });
   }
   function changeSong(mp3File) {
@@ -215,8 +208,6 @@ $(document).ready(function () {
     audio[0].pause();
     audio[0].load(); //suspends and restores all audio element
 
-    // if (isAutoplay)
-    //     audio[0].play();
   }
 
   // ELIZABETH'S CODE -----------------------------------
@@ -301,6 +292,13 @@ $(document).ready(function () {
     moodBoozeArray = [];
     moodBoozeArray.push(moodEl, boozeEl);
     console.log(moodBoozeArray);
+  }
+
+  function hardReset() {
+    moodBoozeArray = [];
+    moodMusicArray = [];
+    $("#results-drink-div").empty();
+    $("#results-music-display-div").empty();
   }
 }); // end of document.ready
 

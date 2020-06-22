@@ -328,17 +328,17 @@ function getSongData(songName){
     //  $("#info-here").append(response.hosts.images);
     //---
     //thinking here we call change song method that takes in the mp3 file as the parameter and changes song using following code
-    // function changeSong(mp3File){
-    //   $("#playerSource").attr("src", "new_src");
+    function changeSong(mp3File){
+      $("#playerSource").attr("src", "new_src");
 
-    // var audio = $("#music-player");      
+    var audio = $("#music-player");      
 
-    // audio[0].pause();
-    // audio[0].load();//suspends and restores all audio element
+    audio[0].pause();
+    audio[0].load();//suspends and restores all audio element
 
-    // if (isAutoplay) 
-    //     audio[0].play();
-    // }
+    if (isAutoplay) 
+        audio[0].play();
+    }
   });
 }
 

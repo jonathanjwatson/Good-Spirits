@@ -77,22 +77,22 @@ img {
 
 .choice-text-booze {
   color: white;
-  font-size: 4vw;
-  padding: 4% 6%;
+  font-size: 3vw;
+  padding: 6% 9%;
 }
 
 .choice-text-mood {
   color: white;
-  font-size: 4vw;
-  top: 3vw;
-  left: 4vw;
+  font-size: 3em;
+  top: 17%;
+  left: 13%;
 }
 
 .choice-text-music {
   color: black;
-  font-size: 3vw;
-  top: 2vw;
-  left: 20vw;
+  font-size: 2.5em;
+  top: 13%;
+  left: 63%;
   text-align: right;
   font-weight: bolder;
 }
@@ -261,7 +261,7 @@ img {
 }
 
 .results-header-text {
-  margin: 5vw 0vw 0vw;
+  margin: 10% 0vw 0vw;
 }
 
 .single-background {
@@ -346,6 +346,12 @@ img {
   display: none;
 }
 
+#album-pic {
+  position: absolute;
+  top: 69%;
+  left: -33%;
+}
+
 #back-button-results {
   width: auto;
 }
@@ -361,7 +367,7 @@ img {
 }
 
 #country-text {
-  left: 14.5vw;
+  left: 49%;
 }
 
 #drink-name {
@@ -430,11 +436,11 @@ img {
 }
 
 #music-player {
-  margin: 26vw -3vw;
+  margin: 81% -18%;
   position: absolute;
   box-shadow: 3px 3px 20px #333;
   border-radius: 25px;
-  left: -4.5vw;
+  left: -26%;
 }
 
 #music-question-text {
@@ -454,6 +460,21 @@ img {
   text-shadow: 3px 3px 0 #333;
 }
 
+#results-header-text-left {
+  font-size: 5em;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  padding: 0% 30%;
+}
+
+#results-header-text-right {
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
 #results-page {
   display: none;
 }
@@ -464,6 +485,14 @@ img {
 
 #results-page-right {
   background: url(../images/Purple.jpg) no-repeat center center fixed;
+}
+
+#results-song-title {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 53% -57%;
+  width: 100vw;
 }
 
 #yes-button {

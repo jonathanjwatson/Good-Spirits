@@ -44,10 +44,50 @@ var thistyIndie = ["https://cdns-preview-1.dzcdn.net/stream/c-1222b91e6d1748ccfa
 var thirstyEdm = ["https://cdns-preview-d.dzcdn.net/stream/c-d85850de8975c7904d52c41037c1268b-6.mp3"];
 var thistyCountry = ["https://cdns-preview-4.dzcdn.net/stream/c-4411bb93125a133e3d9d23b6c34d831f-2.mp3"];
 
+
+// drink variables from Joel
+var drinks = [
+  "Victory Collins", // happy vodka
+  "Day At The Beach",// happy rum
+  "Orange Oasis", //happy Gin
+  "Alleghany",//happy whiskey
+  "Tequilla Sunrise",// happy tequilla
+  "Brandy Cobbler",//happy brandy
+  "Bruised Heart",//sad vadka
+  "Adios Amigos Cocktail",//sad rum
+  "Corpse Reviver",//sad gin
+  "Bourbon Sour",//sad whiskey
+  "3-Mile Long Island Iced Tea",//sad tequilla
+  "Brandy Sour",//sad brandy
+  "Popped Cherry",//thirsty vodka
+  "Bahama Mama",// thirsty rum
+  "69 Special",//thirsty gin
+  "Midnight Cowboy",//thirsty wisky
+  "Paloma",//thirsty tequilla
+  "Between The Sheets",//thirsty brandy
+  "1-900-FUK-MEUP",//energized vodka
+  "Adam Bomb",//energized rum
+  "Salty Dog",//energized gin
+  "Fahrenheit 5000",//energized whiskey
+  "Brave Bull Shooter",//nergized tequilla
+  "English Highball",//energized brandy
+  "Dirty Martini",//calm vodka
+  "Rum Punch",//calm rum
+  "Gin And Tonic",//calm gin
+  "Sazerac",//calm whiskey
+  "Tequilla Slammer",//calm tequilla
+  "Boston Sidecar",//calm brandy
+  "Absolut Stress #2",//zen vodka
+  "Zombie",//zen rum
+  "Jitter Bug",//zen gin
+  "Artillery Punch",//zen whiskey
+  "Downshift",//zen tequilla
+  "Artillery Punch",//zen brandy
+];
+
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
   
-
   var search = "eminem";
   var settings = {
     async: true,
@@ -205,44 +245,6 @@ function toResultsPage() {
 }
 
 
-//drink variables from Joel
 
-// var drinks = [
-//   "Victory Collins", // happy vodka
-//   "Day At The Beach",// happy rum
-//   "Orange Oasis", //happy Gin
-//   "Alleghany",//happy whiskey
-//   "Tequilla Sunrise",// happy tequilla
-//   "Brandy Cobbler",//happy brandy
-//   "Bruised Heart",//sad vadka
-//   "Adios Amigos Cocktail",//sad rum
-//   "Corpse Reviver",//sad gin
-//   "Bourbon Sour",//sad whiskey
-//   "3-Mile Long Island Iced Tea",//sad tequilla
-//   "Brandy Sour",//sad brandy
-//   "Popped Cherry",//thirsty vodka
-//   "Bahama Mama",// thirsty rum
-//   "69 Special",//thirsty gin
-//   "Midnight Cowboy",//thirsty wisky
-//   "Paloma",//thirsty tequilla
-//   "Between The Sheets",//thirsty brandy
-//   "1-900-FUK-MEUP",//energized vodka
-//   "Adam Bomb",//energized rum
-//   "Salty Dog",//energized gin
-//   "Fahrenheit 5000",//energized whiskey
-//   "Brave Bull Shooter",//nergized tequilla
-//   "English Highball",//energized brandy
-//   "Dirty Martini",//calm vodka
-//   "Rum Punch",//calm rum
-//   "Gin And Tonic",//calm gin
-//   "Sazerac",//calm whiskey
-//   "Tequilla Slammer",//calm tequilla
-//   "Boston Sidecar",//calm brandy
-//   "Absolut Stress #2",//zen vodka
-//   "Zombie",//zen rum
-//   "Jitter Bug",//zen gin
-//   "Artillery Punch",//zen whiskey
-//   "Downshift",//zen tequilla
-//   "Artillery Punch",//zen brandy
-// ];
+
 

@@ -41,7 +41,7 @@ img {
   color: white;
   background: none;
   letter-spacing: 1px;
-  width: 10vw;
+  width: auto;
   text-decoration: none;
   text-shadow: 1px 1px 2px #333;
   box-shadow: 1px 1px 2px #333;
@@ -128,7 +128,7 @@ img {
   color: #fff;
   background: none;
   letter-spacing: 1px;
-  width: 10vw;
+  width: auto;
   text-shadow: 1px 1px 2px #333;
   box-shadow: 1px 1px 2px #333;
   font-family: "Julius Sans One", sans-serif;
@@ -276,7 +276,7 @@ img {
 .spirits {
   font-family: "Vast Shadow", cursive;
   font-size: 3.5vw;
-  margin: -3.5% 0% 0%;  
+  margin: -3.5% 0% 0%;
   position: absolute;
   left: 48vw;
 }
@@ -344,6 +344,10 @@ img {
 
 #age-verification-page {
   display: none;
+}
+
+#back-button-results {
+  width: auto;
 }
 
 #booze-page {
@@ -528,6 +532,26 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .choice-text-music {
+    color: black;
+    font-size: 3vw;
+    top: 5vw;
+    left: 34vw;
+    text-align: right;
+    font-weight: bolder;
+  }
+
+  #back-button-results {
+    width: auto;
+    margin: 0% -5%;
+  }
+
+  #country-text {
+    left: 29.5vw;
+  }
+}
+
 /* @media screen and (max-width: 768px) {
   .age-text {
     font-size: 5vw;
@@ -538,7 +562,7 @@ img {
   /* .custom-row-card {
     margin: 11vw 15.6vw -5vw;
   } */
-  /* .custom-text-left {
+/* .custom-text-left {
     margin: 36vw -3vw;
     right: 25%;
     font-size: 6vw;
@@ -547,7 +571,7 @@ img {
     font-size: 4.5vw;
     margin: 8.5vw 1vw;
   } */
-  /* .forward-button {
+/* .forward-button {
     top: 5vw;
     width: 13.5vw;
   }
@@ -566,7 +590,7 @@ img {
   .question-text {
     margin: 2.9vw 3.3vw;
   } */
-  /* .spirits {
+/* .spirits {
     font-size: 5vw;
     margin: -7vw 0vw 0vw;
   }
@@ -577,18 +601,18 @@ img {
   #age-modal-right {
     margin: 15vw -2vw;
     padding: 4vw;
-  } */ 
-  /* #calm {
+  } */
+/* #calm {
     position: absolute;
     top: 47vw;
     left: 39vw;
   } */
-  /* #country {
+/* #country {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
   } */
-  /* #edm {
+/* #edm {
     position: absolute;
     top: 47vw;
     left: 39vw;
@@ -648,12 +672,12 @@ img {
   #results-header-text-right {
     margin: 20vw 0vw;
   } */
-  /* #sad {
+/* #sad {
     position: absolute;
     top: 23.4vw;
     left: 39vw;
   } */
-  /* #tequila {
+/* #tequila {
     position: absolute;
     top: 0vw;
     left: 39vw;
@@ -663,9 +687,42 @@ img {
     top: 23.4vw;
     left: 39vw;
   } */
-  /* #zen {
-    position: absolute;
-    top: 0vw;
-    left: 39vw;
-  } */
+/* #zen {
+  position: absolute;
+  top: 0vw;
+  left: 39vw;
+} */
 /* } */
+@media screen and (max-width: 576px) {
+  .back-button-white {
+    margin: 0% -6%;
+    font-size: 75%;
+  }
+  .choice-text-mood {
+    color: white;
+    font-size: 4vw;
+    top: 7vw;
+    left: 9vw;
+  }
+  .good {
+    font-size: 7vw;
+  }
+  .question-div {
+    top: 7%;
+    left: 30%;
+  }
+  .spirits {
+    font-size: 7.5vw;
+  }
+  .yes-no-button {
+    width: auto;
+    height: auto;
+  }
+  #age-modal-left {
+    margin: 15vw -10.5vw;
+  }
+  #back-button-results {
+    width: auto;
+    margin: 0% -8%;
+  }
+}

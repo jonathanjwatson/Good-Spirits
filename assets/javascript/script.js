@@ -53,7 +53,7 @@ $(document).ready(function () {
     "calm|jazz": "Black Bird (remastered 2009)",
     
   
-  }
+  };
 
   // drink variables from Joel
 
@@ -220,14 +220,24 @@ $(document).ready(function () {
     console.log(moodBoozeArray);
   }
 
-  function hardReset() {
-    moodBoozeArray = [];
-    moodMusicArray = [];
-    $("#results-drink-div").html("");
-    $("#results-music-display-div").empty();
-  }
+  
 }); // end of document.ready
-
+function hardReset() {
+  moodBoozeArray = [];
+  moodMusicArray = [];
+  $("#results-drink-div").children().each(function(index,child){
+    console.log(child);
+    $(child).html("");
+  });
+  console.log($("#results-music-display-div").children());
+  $("#results-music-display-div").children().each(function(index,child){
+    console.log(child);
+    $(child).html("");
+  });
+  console.log(moodBoozeArray);
+  console.log(moodMusicArray);
+  //toLandingPage();
+}
 //-------------------------------------------------
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 

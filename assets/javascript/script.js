@@ -1,13 +1,19 @@
-var songs = [];
-var availLiquor = [];
-var ingredientString = [];
-var seconds = 0;
-var song = "Eminem";
+
 //look into switch cases to 
 //just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
  // getDrinkData(drink);
-  getSongData(song);
+ var songs = [];
+var availLiquor = [];
+var ingredientString = [];
+var seconds = 0;
+//var song = "Eminem";
+var moodMusicArray = [];
+var moodBoozeArray = [];
+var moodEl;
+var musicEl;
+var boozeEl;
+ // getSongData();
   // var queryInitial =
   //   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
   // var searchDrink = "Mojito";
@@ -151,6 +157,8 @@ var thistyCountry = [
 ];
 
 // drink variables from Joel
+
+
 var drinks = {
   "happy|vodka": "Victory Collins",
 }
@@ -304,8 +312,16 @@ var drinks = {
 //     console.log(response.drinks[0].strInstructions);
 //   });
 //}
-function getSongData(songName){
-  var search = songName;
+
+var songz = {
+  "thirsty|country": "My Little Girl",
+}
+
+function getSongData(){
+  var moodSongString = moodMusicArray.join("|");
+  var searchSong = songz[moodSongString];
+  console.log(searchSong);
+  var search = searchSong;
   var settings = {
     async: true,
     crossDomain: true,
@@ -323,31 +339,31 @@ function getSongData(songName){
     var title = "title";
 
     $("#results-song-title").append(response.data[0][title]);
-    var songImage = response.data[0].album.cover;
-   // $("#song-image").append(`<img id="drink-id" src=${songImage} />`);
+    var songImage = response.data[0].album.cover_small;
+    changeSong(response.data[0].preview);
+    //$("#song-image").append(`<img id="album-pic" src=${songImage} />`);
     //  $("#info-here").append(response.hosts.images);
     //---
     //thinking here we call change song method that takes in the mp3 file as the parameter and changes song using following code
-    function changeSong(mp3File){
-      $("#playerSource").attr("src", "new_src");
-
-    var audio = $("#music-player");      
-
-    audio[0].pause();
-    audio[0].load();//suspends and restores all audio element
-
-    if (isAutoplay) 
-        audio[0].play();
-    }
+    
   });
+  
 }
+function changeSong(mp3File){
+  console.log(mp3File);
+  $("#music-player-source").attr("src",mp3File);
+
+var audio = $("#music-player");      
+
+audio[0].pause();
+audio[0].load();//suspends and restores all audio element
+
+// if (isAutoplay) 
+//     audio[0].play();
+ }
 
   // ELIZABETH'S CODE -----------------------------------
-  var moodMusicArray = [];
-  var moodBoozeArray = [];
-  var moodEl;
-  var musicEl;
-  var boozeEl;
+ 
 
   var queryInitial =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
@@ -400,6 +416,7 @@ function getSongData(songName){
     musicEl = music;
     console.log(musicEl);
     chooseUserSong();
+    getSongData();
     toBoozePage();
   });
 

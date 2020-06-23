@@ -271,6 +271,11 @@ function toKidsPage() {
   $("#kids-page").show();
 }
 
+function toBoozePage() {
+  $("#music-page").hide();
+  $("#booze-page").show();
+}
+
 function toResultsPage() {
   $("#booze-page").hide();
   $("#results-page").show();

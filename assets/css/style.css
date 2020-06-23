@@ -164,7 +164,7 @@ img {
   z-index: 1 !important;
   background-color: black;
   color: white;
-  padding: 4.5vw 0vw 0.5vw;
+  padding: 4.5vw 0vw .5vw;
 }
 
 .header-questions {
@@ -505,6 +505,10 @@ img {
   text-shadow: 3px 3px 0 #333;
 }
 
+#results-header {
+  padding: 4.5vw 0vw 2vw;
+}
+
 #results-header-text-left {
   font-size: 5em;
   text-align: right;
@@ -808,6 +812,9 @@ img {
     top: 13vw;
     z-index: 1;
     position: relative;
+  }
+  #results-header {
+    padding: 11.5vw 0vw 7vw;
   }
   #results-header-text-left {
     margin: 14vw 0vw;

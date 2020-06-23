@@ -164,7 +164,7 @@ img {
   z-index: 1 !important;
   background-color: black;
   color: white;
-  padding: 4.5vw 0vw 0.5vw;
+  padding: 4.5vw 0vw .5vw;
 }
 
 .header-questions {
@@ -505,6 +505,10 @@ img {
   text-shadow: 3px 3px 0 #333;
 }
 
+#results-header {
+  padding: 4.5vw 0vw 2vw;
+}
+
 #results-header-text-left {
   font-size: 5em;
   text-align: right;
@@ -723,15 +727,25 @@ img {
   }
 }
 @media screen and (max-width: 576px) {
-  .good {
-    font-size: 7vw;
-  }
-  .spirits {
-    font-size: 7.5vw;
-  }
   .back-button-white {
     margin: 0% -6%;
     font-size: 75%;
+  }
+  .choice-text-mood {
+    color: white;
+    font-size: 4vw;
+    top: 7vw;
+    left: 9vw;
+  }
+  .good {
+    font-size: 7vw;
+  }
+  .question-div {
+    top: 9%;
+    left: 30%;
+  }
+  .spirits {
+    font-size: 7.5vw;
   }
   .yes-no-button {
     width: auto;
@@ -740,68 +754,9 @@ img {
   #age-modal-left {
     margin: 117% -183%;
   }
-  .question-div {
-    top: 7%;
-    left: 30%;
-  }
-  .choice-text-mood {
-    color: white;
-    font-size: 4vw;
-    top: 7vw;
-    left: 9vw;
-  }
   #back-button-results {
     width: 20%;
     margin: 0% -7%;
-  }
-  #results-header-text-left {
-    margin: 14vw 0vw;
-    font-size: 2em;
-    text-align: right;
-    padding: 0% 0% 0% 79%;
-    position: relative;
-    top: 40vw;
-    width: 100%;
-    border: 0px;
-    left: -125%;
-  }
-  #results-header-text-right {
-    margin: 3vw 0vw;
-    font-size: 2em;
-    position: absolute;
-    left: -51vw;
-    border: 0px;
-  }
-  #results-song-title {
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    margin: 66% -40%;
-    width: 200%;
-    text-align: left;
-    position: relative;
-    top: 29vw;
-  }
-  #results-song-image {
-    position: relative;
-    top: 3vw;
-    left: 40vw;
-    z-index: 1;
-  }
-  #music-player {
-    left: -16vw;
-    top: 13vw;
-    z-index: 1;
-    position: relative;
-  }
-  #drink-name {
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    width: 100vw;
-    position: relative;
-    top: 4vw;
-    left: -47vw;
   }
   #drink-image {
     margin: -8% 0%;
@@ -810,7 +765,6 @@ img {
     top: 4vw;
     box-shadow: 3px 3px 10px 0;
   }
-
   #drink-ingredients {
     position: relative;
     top: 8vw;
@@ -843,5 +797,57 @@ img {
     padding: 0% 8% 6% 8%;
     font-size: 54%;
     box-shadow: 3px 3px 10px 0;
+  }
+  #drink-name {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100vw;
+    position: relative;
+    top: 4vw;
+    left: -47vw;
+  }
+  #music-player {
+    left: -16vw;
+    top: 13vw;
+    z-index: 1;
+    position: relative;
+  }
+  #results-header {
+    padding: 11.5vw 0vw 7vw;
+  }
+  #results-header-text-left {
+    margin: 14vw 0vw;
+    font-size: 2em;
+    text-align: right;
+    padding: 0% 0% 0% 79%;
+    position: relative;
+    top: 40vw;
+    width: 100%;
+    border: 0px;
+    left: -125%;
+  }
+  #results-header-text-right {
+    margin: 3vw 0vw;
+    font-size: 2em;
+    position: absolute;
+    left: -51vw;
+    border: 0px;
+  }
+  #results-song-image {
+    position: relative;
+    top: 3vw;
+    left: 40vw;
+    z-index: 1;
+  }
+  #results-song-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 66% -40%;
+    width: 200%;
+    text-align: left;
+    position: relative;
+    top: 29vw;
   }
 }

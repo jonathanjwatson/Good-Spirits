@@ -569,9 +569,6 @@ img {
   .back-button-white {
     margin: 0.1vw;
   }
-  /* .custom-row-card {
-    margin: 6vw 1.6vw 0vw;
-  } */
   .custom-text-left {
     margin: 29vw 4.5vw;
   }
@@ -580,6 +577,7 @@ img {
   }
   .forward-button {
     margin: 0vw;
+    width: auto;
   }
   .header-questions {
     padding: 4.5vw 0vw 3vw;
@@ -638,9 +636,6 @@ img {
   .back-button-white {
     top: 5vw;
   }
-  .custom-row-card {
-    margin: 11vw 15.6vw -5vw;
-  }
   .custom-text-left {
     margin: 36vw -3vw;
     right: 25%;
@@ -652,7 +647,7 @@ img {
   }
   .forward-button {
     top: 5vw;
-    width: 13.5vw;
+    width: auto;
   }
   .good {
     font-size: 5vw;
@@ -680,26 +675,6 @@ img {
   #age-modal-right {
     margin: 15vw -2vw;
     padding: 4vw;
-  }
-  #calm {
-    position: absolute;
-    top: 47vw;
-    left: 39vw;
-  }
-  #country {
-    position: absolute;
-    top: 23.4vw;
-    left: 39vw;
-  }
-  #edm {
-    position: absolute;
-    top: 47vw;
-    left: 39vw;
-  }
-  #gin {
-    position: absolute;
-    top: 47vw;
-    left: 39vw;
   }
   #kids-header-text-left {
     font-size: 10vw;
@@ -737,11 +712,6 @@ img {
     left: -12vw;
     top: 15vw;
   }
-  #randb {
-    position: absolute;
-    top: 0vw;
-    left: 39vw;
-  }
   #results-header {
     padding: 11vw 0vw 0vw;
   }
@@ -750,26 +720,6 @@ img {
   }
   #results-header-text-right {
     margin: 20vw 0vw;
-  }
-  #sad {
-    position: absolute;
-    top: 23.4vw;
-    left: 39vw;
-  }
-  #tequila {
-    position: absolute;
-    top: 0vw;
-    left: 39vw;
-  }
-  #vodka {
-    position: absolute;
-    top: 23.4vw;
-    left: 39vw;
-  }
-  #zen {
-    position: absolute;
-    top: 0vw;
-    left: 39vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -788,7 +738,7 @@ img {
     height: auto;
   }
   #age-modal-left {
-    margin: 15vw -10.5vw;
+    margin: 117% -183%;
   }
   .question-div {
     top: 7%;
@@ -801,7 +751,97 @@ img {
     left: 9vw;
   }
   #back-button-results {
-    width: auto;
-    margin: 0% -8%;
+    width: 20%;
+    margin: 0% -7%;
+  }
+  #results-header-text-left {
+    margin: 14vw 0vw;
+    font-size: 2em;
+    text-align: right;
+    padding: 0% 0% 0% 79%;
+    position: relative;
+    top: 40vw;
+    width: 100%;
+    border: 0px;
+    left: -125%;
+  }
+  #results-header-text-right {
+    margin: 3vw 0vw;
+    font-size: 2em;
+    position: absolute;
+    left: -51vw;
+    border: 0px;
+  }
+  #results-song-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 66% -40%;
+    width: 200%;
+    text-align: left;
+    position: relative;
+    top: 29vw;
+  }
+  #results-song-image {
+    position: relative;
+    top: 3vw;
+    left: 40vw;
+    z-index: 1;
+  }
+  #music-player {
+    left: -16vw;
+    top: 13vw;
+    z-index: 1;
+    position: relative;
+  }
+  #drink-name {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100vw;
+    position: relative;
+    top: 4vw;
+    left: -47vw;
+  }
+  #drink-image {
+    margin: -8% 0%;
+    position: absolute;
+    left: 0vw;
+    top: 4vw;
+    box-shadow: 3px 3px 10px 0;
+  }
+
+  #drink-ingredients {
+    position: relative;
+    top: 8vw;
+    left: -50vw;
+    width: 168%;
+    border: 2px solid black;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 54%;
+    padding: 5%;
+    box-shadow: 3px 3px 10px 0;
+  }
+  #drink-ingredients-title {
+    font-family: "Julius Sans One", sans-serif;
+    position: relative;
+    top: 6.3vw;
+    left: -317%;
+    width: 166%;
+    font-size: 1em;
+    border: 2px solid black;
+    padding: 1% 4%;
+    box-shadow: 3px 3px 10px 0;
+  }
+  #drink-instructions {
+    font-family: "Julius Sans One", sans-serif;
+    border: 2px solid black;
+    position: relative;
+    left: -47%;
+    top: -10vw;
+    width: 38vw;
+    padding: 0% 8% 6% 8%;
+    font-size: 54%;
+    box-shadow: 3px 3px 10px 0;
   }
 }

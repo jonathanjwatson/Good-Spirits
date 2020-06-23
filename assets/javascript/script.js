@@ -49,12 +49,9 @@ $(document).ready(function () {
     "calm|edm": "Dear Boy",
     "calm|indie":"Stephanie Says",
     "calm|jazz": "So what",
-    
-  
   };
 
   // drink variables from Joel
-
   var drinks = {
     "happy|vodka": "Victory Collins",
     "happy|rum": "Day At The Beach", // happy rum
@@ -134,8 +131,6 @@ $(document).ready(function () {
     audio[0].load(); //suspends and restores all audio element
   }
 
-  // ELIZABETH'S CODE -----------------------------------
-
   var queryInitial =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
@@ -174,7 +169,6 @@ $(document).ready(function () {
   }
 
   // ELIZABETH'S CODE -----------------------------------
-
   // event listener to get selected mood
   $(".imagesMood").click(function () {
     var mood = $(this)[0].offsetParent.id;
@@ -218,7 +212,6 @@ $(document).ready(function () {
     moodBoozeArray.push(moodEl, boozeEl);
     console.log(moodBoozeArray);
   }
-
   
 }); // end of document.ready
 function hardReset() {
@@ -237,7 +230,7 @@ function hardReset() {
   console.log(moodMusicArray);
   //toLandingPage();
 }
-//-------------------------------------------------
+
 // onclick functions- DO NOT PUT THESE INSIDE DOCUMENT READY!
 
 // navigate from landing page to age verification page
@@ -276,11 +269,6 @@ function toMusicPage() {
 function toKidsPage() {
   $("#age-verification-page").hide();
   $("#kids-page").show();
-}
-
-function toBoozePage() {
-  $("#music-page").hide();
-  $("#booze-page").show();
 }
 
 function toResultsPage() {

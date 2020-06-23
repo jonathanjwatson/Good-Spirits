@@ -1,6 +1,4 @@
 
-//look into switch cases to
-//just put in the basic api setup proving data transfer, commented out the append methods to limit issues for now.
 $(document).ready(function () {
 
   var moodMusicArray = [];
